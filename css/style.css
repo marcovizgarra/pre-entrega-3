@@ -21,13 +21,15 @@
     display: flex;
     justify-content: space-around; }
   .navbar .navbar-izquierda {
-    width: 510px; }
+    width: 510px;
+    margin-left: 2.5vw; }
     .navbar .navbar-izquierda a img {
       width: 20px; }
   .navbar .navbar-centro img {
     width: 300px; }
   .navbar .navbar-derecha {
-    width: 510px; }
+    width: 510px;
+    margin-right: 2.5vw; }
 
 body {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.877)), url(../assets/img/fuego-rojo-background.jpg);
