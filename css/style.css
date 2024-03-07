@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+.navbar {
+  background-color: #00000000; }
+  .navbar a {
+    color: white;
+    border-top: 4px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0);
+    text-transform: uppercase;
+    margin: 10px; }
+    .navbar a:hover:not(.no-hover-navbar) {
+      color: white;
+      border-top: 4px;
+      border-style: solid;
+      border-color: #ff0404;
+      transition: .9s; }
+  .navbar .active {
+    color: red !important;
+    font-weight: bold; }
+  .navbar .navbar-collapse {
+    display: flex;
+    justify-content: space-around; }
+  .navbar .navbar-izquierda {
+    width: 510px; }
+    .navbar .navbar-izquierda a img {
+      width: 20px; }
+  .navbar .navbar-centro img {
+    width: 300px; }
+  .navbar .navbar-derecha {
+    width: 510px; }
+
+body {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.877)), url(../assets/img/fuego-rojo-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+* {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: large; }
+
+.video-box video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1; }
+  .video-box video::after {
+    content: "";
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; }

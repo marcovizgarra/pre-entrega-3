@@ -1,0 +1,49 @@
+.navbar {
+    background-color: #00000000;
+
+    a {
+        color: white;
+        border-top: 4px;
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 0);
+        text-transform: uppercase;
+        margin: 10px;
+        &:hover:not(.no-hover-navbar) {
+            color: white;
+            border-top: 4px;
+            border-style: solid;
+            border-color: rgb(255, 4, 4);
+            transition: .9s;
+        }
+    }
+
+    .active {
+        color: rgb(255, 0, 0) !important;
+        font-weight: bold;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navbar-izquierda {
+        width: 510px;
+
+        a{
+            img{
+                width: 20px;
+            }
+        }
+    }
+
+    .navbar-centro {
+        img {
+            width: 300px;
+        }
+    }
+
+    .navbar-derecha {
+        width: 510px;
+    }
+}
