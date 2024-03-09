@@ -1,6 +1,7 @@
 .navbar {
     background-color: #00000000;
-
+    justify-content: center;
+    padding-top: 1vw;
     a {
         color: white;
         border-top: 4px;
@@ -17,34 +18,30 @@
         }
     }
 
-    .active {
-        color: rgb(255, 0, 0) !important;
-        font-weight: bold;
-    }
-
-    .navbar-collapse {
+    .container-fluid {
         display: flex;
-        justify-content: space-around;
-    }
-
-    .navbar-izquierda {
-        width: 510px;
-        margin-left: 2.5vw;
-        a{
-            img{
-                width: 20px;
+        justify-content: space-between;
+        align-items: center;
+        .navbar-collapse {
+            justify-content: center;
+        }
+        .navbar-izquierda {
+            a{
+                img{
+                    width: 20px;
+                }
             }
         }
-    }
 
-    .navbar-centro {
-        img {
-            width: 300px;
+        .navbar-centro {
+            img {
+                width: 300px;
+            }
+        }
+
+        .active {
+            color: rgb(255, 0, 0) !important;
+            font-weight: bold;
         }
     }
-
-    .navbar-derecha {
-        width: 510px;
-        margin-right: 2.5vw;
-    }
-}
+}   

@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: large; }
+
 .navbar {
-  background-color: #00000000; }
+  background-color: #00000000;
+  justify-content: center;
+  padding-top: 1vw; }
   .navbar a {
     color: white;
     border-top: 4px;
@@ -14,32 +21,24 @@
       border-style: solid;
       border-color: #ff0404;
       transition: .9s; }
-  .navbar .active {
-    color: red !important;
-    font-weight: bold; }
-  .navbar .navbar-collapse {
+  .navbar .container-fluid {
     display: flex;
-    justify-content: space-around; }
-  .navbar .navbar-izquierda {
-    width: 510px;
-    margin-left: 2.5vw; }
-    .navbar .navbar-izquierda a img {
+    justify-content: space-between;
+    align-items: center; }
+    .navbar .container-fluid .navbar-collapse {
+      justify-content: center; }
+    .navbar .container-fluid .navbar-izquierda a img {
       width: 20px; }
-  .navbar .navbar-centro img {
-    width: 300px; }
-  .navbar .navbar-derecha {
-    width: 510px;
-    margin-right: 2.5vw; }
+    .navbar .container-fluid .navbar-centro img {
+      width: 300px; }
+    .navbar .container-fluid .active {
+      color: red !important;
+      font-weight: bold; }
 
 body {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.877)), url(../assets/img/fuego-rojo-background.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
-
-* {
-  margin: 0;
-  font-family: "Oswald", sans-serif;
-  font-size: large; }
 
 .video-box video {
   width: 100%;
