@@ -1,0 +1,35 @@
+.faq-main {
+    h1 {
+        color: white;
+        margin-top: $margen-top;
+        text-transform: uppercase;
+    }
+    .accordion {
+        margin-top: $margen-top;
+        text-transform: uppercase;
+        width: 60vw;
+        --bs-accordion-bg: #242020;
+        --bs-accordion-color: white;
+        --bs-accordion-btn-color: white;
+        --bs-accordion-border-color: #d22329;
+
+        --bs-accordion-btn-focus-box-shadow: none;
+        --bs-accordion-active-bg: #d22329;
+        --bs-accordion-active-color: white;
+        button{
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+
+        .accordion-collapse {
+            ul {
+                text-align: left;
+                li {
+                    text-transform: none;
+                }
+            }
+        }
+    }
+    @include flex-column-center;
+}

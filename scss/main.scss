@@ -1,4 +1,8 @@
+@import './utilities/variables';
 @import './utilities/reset';
+@import './utilities/extend';
+
 @import './sections/navbar';
 @import './sections/_background-pages';
-@import './sections/home-page'
+@import './sections/home-page';
+@import './sections/faq-page';

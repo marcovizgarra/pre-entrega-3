@@ -6,8 +6,7 @@
 
 .navbar {
   background-color: #00000000;
-  justify-content: center;
-  padding-top: 1vw; }
+  padding-top: 1.5vw; }
   .navbar a {
     color: white;
     border-top: 4px;
@@ -22,15 +21,18 @@
       border-color: #ff0404;
       transition: .9s; }
   .navbar .container-fluid {
-    display: flex;
     justify-content: space-between;
     align-items: center; }
+    .navbar .container-fluid ul {
+      justify-content: center;
+      width: 487px;
+      height: 69px; }
     .navbar .container-fluid .navbar-collapse {
       justify-content: center; }
     .navbar .container-fluid .navbar-izquierda a img {
       width: 20px; }
     .navbar .container-fluid .navbar-centro img {
-      width: 300px; }
+      width: 350px; }
     .navbar .container-fluid .active {
       color: red !important;
       font-weight: bold; }
@@ -62,3 +64,34 @@ body {
     bottom: 0;
     left: 0;
     z-index: -1; }
+
+.faq-main {
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  display: flex; }
+  .faq-main h1 {
+    color: white;
+    margin-top: 30px;
+    text-transform: uppercase; }
+  .faq-main .accordion {
+    margin-top: 30px;
+    text-transform: uppercase;
+    width: 60vw;
+    --bs-accordion-bg: #242020;
+    --bs-accordion-color: white;
+    --bs-accordion-btn-color: white;
+    --bs-accordion-border-color: #d22329;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-bg: #d22329;
+    --bs-accordion-active-color: white; }
+    .faq-main .accordion button {
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 5px; }
+    .faq-main .accordion .accordion-collapse ul {
+      text-align: left; }
+      .faq-main .accordion .accordion-collapse ul li {
+        text-transform: none; }

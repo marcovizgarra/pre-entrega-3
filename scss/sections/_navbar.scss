@@ -1,7 +1,6 @@
 .navbar {
     background-color: #00000000;
-    justify-content: center;
-    padding-top: 1vw;
+    padding-top: 1.5vw;
     a {
         color: white;
         border-top: 4px;
@@ -19,9 +18,14 @@
     }
 
     .container-fluid {
-        display: flex;
         justify-content: space-between;
         align-items: center;
+        ul {
+            justify-content: center;
+            width: 487px;
+            height: 69px;
+        }
+        
         .navbar-collapse {
             justify-content: center;
         }
@@ -35,7 +39,7 @@
 
         .navbar-centro {
             img {
-                width: 300px;
+                width: 350px;
             }
         }
 
