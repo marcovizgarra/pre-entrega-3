@@ -1,4 +1,38 @@
+.home-main-container {
+    background-color: rgb(48, 45, 45);
+    width: 100%;
+    min-height: 77vh;
+    min-width: 95vw;
+    .miembros-slipknot {
+        display: flex;
+        width: 1500px;
+        height: 650px;
+        img {
+            width: 0;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .8;
+            transition: .5s ease;
+            &:hover {
+                cursor: crosshair;
+                width: 300px;
+                opacity: 1;
+                filter: contrast(120%);
+            }
+        }
+    }
+    .info-banda {
+        #logo-slipknot-info {
+            margin-top: $margen-top;
+            width: 400px;
+        }
+    }
+    @include flex-column-center;
+}
+
 .video-box {
+    width: 100%;
+    height: 100vh;
     video {
         width: 100%;
         height: 100vh;
@@ -10,17 +44,15 @@
         bottom: 0;
         left: 0;
         z-index: -1;
-        &::after {
-            content: "";
-            background-color: rgba(255, 255, 255, 0);
-            width: 100%;
-            height: 100vh;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-        }
+        // &::after {
+        //     width: 100%;
+        //     height: 100vh;
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        //     bottom: 0;
+        //     left: 0;
+        //     z-index: -1;
+        // }
     }
 }
