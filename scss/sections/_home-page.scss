@@ -1,35 +1,3 @@
-.home-main-container {
-    background-color: rgb(48, 45, 45);
-    width: 100%;
-    min-height: 77vh;
-    min-width: 95vw;
-    .miembros-slipknot {
-        display: flex;
-        width: 1500px;
-        height: 650px;
-        img {
-            width: 0;
-            flex-grow: 1;
-            object-fit: cover;
-            opacity: .8;
-            transition: .5s ease;
-            &:hover {
-                cursor: crosshair;
-                width: 300px;
-                opacity: 1;
-                filter: contrast(120%);
-            }
-        }
-    }
-    .info-banda {
-        #logo-slipknot-info {
-            margin-top: $margen-top;
-            width: 400px;
-        }
-    }
-    @include flex-column-center;
-}
-
 .video-box {
     width: 100%;
     height: 100vh;
@@ -44,15 +12,110 @@
         bottom: 0;
         left: 0;
         z-index: -1;
-        // &::after {
-        //     width: 100%;
-        //     height: 100vh;
-        //     position: absolute;
-        //     top: 0;
-        //     right: 0;
-        //     bottom: 0;
-        //     left: 0;
-        //     z-index: -1;
+    }
+}
+
+.home-main-container {
+    background-color: black;
+    width: 100%;
+    min-height: 77vh;
+    min-width: 95vw;
+    .miembros-slipknot {
+        margin-top: $margen-top;
+        display: flex;
+        width: 80vw;
+        height: 60vh;
+        img {
+            width: 0;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .8;
+            transition: .5s ease;
+            &:hover {
+                cursor: crosshair;
+                width: 300px;
+                opacity: 1;
+                filter: contrast(120%);
+            }
+        }
+    }
+
+    .info-banda {
+        width: 65vw;
+        #logo-slipknot-info {
+            margin-top: $margen-top;
+            width: 400px;
+        }
+        h1 {
+            margin-top: ($margen-top*3);
+            font-size: 35px;
+            text-transform: uppercase;
+        }
+        .resumen-banda {
+            text-align: justify
+        }
+        // h2 {
+        //     margin-top: ($margen-top*2);
+        //     text-transform: uppercase;
         // }
     }
+
+    .info-integrantes {
+        // width: 65vw;
+        // margin-top: ($margen-top*3);
+        .prueba {
+            background-image: linear-gradient(
+                to top, 
+                #0000008e,
+                #0000008e),
+                url(../assets/img/9-point-star.png);
+            background-position: center;
+            background-size: cover;
+            width: 350px;
+            height: 350px;
+            @include flex-column-center;
+            h2 {
+                letter-spacing: 4px;
+                text-transform: uppercase;
+            }
+        }
+        .container-integrantes {
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            grid-template-rows: repeat(5, 1fr); 
+            gap: 0px 0px; 
+            grid-template-areas: 
+              "sid-wilson jay-weimberg"
+              "alessandro-venturella michael-pfaff"
+              "jim-root craig-jones"
+              "shawn-crahan mick-thomson"
+              "corey-taylor corey-taylor";
+            .integrante {
+                h3{
+                    text-transform: uppercase;
+                }
+                @include resumen-integrante;
+            }
+            .sid-wilson {
+                background: linear-gradient(
+                    to bottom,
+                    #000000b7,
+                    #00000071),
+                    url(../assets/img/band-members-section/sid-wilson-resumen.jpg);
+                @include resumen-integrante;
+            }
+            .jay-weinberg {
+                background: linear-gradient(
+                    to bottom,
+                    #000000b7,
+                    #00000071),
+                    url(../assets/img/band-members-section/jay-winberg-resumen.webp);
+                @include resumen-integrante;
+            }
+            
+            @include flex-row-center;
+        }
+        @include flex-column-center;
+    }
+    @include flex-column-center;
 }
