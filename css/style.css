@@ -662,3 +662,42 @@ body {
       .main-shows .show-options .option-show img {
         width: 398px;
         height: auto; }
+
+.main-merch {
+  margin-top: 30px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center; }
+  .main-merch h1 {
+    font-size: 35px;
+    text-transform: uppercase; }
+  .main-merch .merch-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center; }
+    .main-merch .merch-container .card {
+      margin: 0 11px;
+      height: 580px;
+      text-align: center; }
+      .main-merch .merch-container .card h5 {
+        text-transform: uppercase; }
+      .main-merch .merch-container .card ul li {
+        height: 40px;
+        background-color: #130303;
+        list-style-type: none; }
+      .main-merch .merch-container .card ul .comprar {
+        text-transform: uppercase;
+        color: red; }
+        .main-merch .merch-container .card ul .comprar:hover {
+          color: white;
+          background-color: red;
+          letter-spacing: 3px;
+          transition: .5s; }
