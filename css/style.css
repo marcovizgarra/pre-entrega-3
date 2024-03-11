@@ -146,6 +146,7 @@ body {
     .home-main-container .info-banda .resumen-banda {
       text-align: justify; }
   .home-main-container .info-integrantes {
+    margin-bottom: 240px;
     display: flex;
     text-align: center;
     align-items: center;
@@ -478,6 +479,7 @@ body {
             font-size: xx-large; }
 
 .faq-main {
+  width: 100vw;
   display: flex;
   text-align: center;
   align-items: center;
