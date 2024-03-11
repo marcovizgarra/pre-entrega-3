@@ -46,23 +46,23 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
   padding: 30px;
   border-color: #d22329;
-  justify-content: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
   align-content: center;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  display: flex; }
+  justify-content: center; }
   .footer-container h2 {
     font-size: large;
     text-transform: uppercase; }
   .footer-container .redes-sociales-footer ul {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     align-items: center;
     flex-direction: row;
     align-content: center;
-    justify-content: center;
-    flex-wrap: wrap; }
+    justify-content: center; }
     .footer-container .redes-sociales-footer ul li {
       list-style-type: none; }
       .footer-container .redes-sociales-footer ul li a {
@@ -108,12 +108,12 @@ body {
   width: 100%;
   min-height: 77vh;
   min-width: 95vw;
-  justify-content: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
   align-content: center;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  display: flex; }
+  justify-content: center; }
   .home-main-container .miembros-slipknot {
     margin-top: 30px;
     display: flex;
@@ -142,103 +142,344 @@ body {
     .home-main-container .info-banda .resumen-banda {
       text-align: justify; }
   .home-main-container .info-integrantes {
-    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
     align-content: center;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    display: flex; }
+    justify-content: center; }
     .home-main-container .info-integrantes .prueba {
       background-image: linear-gradient(to top, #0000008e, #0000008e), url(../assets/img/9-point-star.png);
       background-position: center;
       background-size: cover;
       width: 350px;
       height: 350px;
-      justify-content: center;
+      display: flex;
+      text-align: center;
+      align-items: center;
       align-content: center;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
-      display: flex; }
+      justify-content: center; }
       .home-main-container .info-integrantes .prueba h2 {
         letter-spacing: 4px;
         text-transform: uppercase; }
     .home-main-container .info-integrantes .container-integrantes {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      gap: 0px 0px;
-      grid-template-areas: "sid-wilson jay-weimberg" "alessandro-venturella michael-pfaff" "jim-root craig-jones" "shawn-crahan mick-thomson" "corey-taylor corey-taylor";
-      display: flex;
-      text-align: center;
-      align-items: center;
-      flex-direction: row;
-      align-content: center;
+      margin: 20px;
+      grid-template-columns: repeat(6, auto);
+      grid-template-rows: repeat(5, auto);
       justify-content: center;
-      flex-wrap: wrap; }
-      .home-main-container .info-integrantes .container-integrantes .integrante {
-        width: 30vw;
-        height: 70vh;
-        padding: 20px;
-        margin: 20px 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: justify;
-        justify-content: center;
-        background-position: center;
-        background-repeat: none;
-        background-size: cover;
-        border-style: solid;
-        border-width: 1.5px;
-        border-color: #d22329;
-        border-radius: 11px; }
-        .home-main-container .info-integrantes .container-integrantes .integrante h3 {
-          text-transform: uppercase; }
+      grid-template-areas: "sid-wilson sid-wilson jay-weimberg jay-weimberg alessandro-venturella alessandro-venturella" "michael-pfaff imagen-banda imagen-banda imagen-banda imagen-banda jim-root" "michael-pfaff imagen-banda imagen-banda imagen-banda imagen-banda jim-root" "craig-jones imagen-banda imagen-banda imagen-banda imagen-banda corey-taylor" "craig-jones shawn-crahan shawn-crahan mick-thomson mick-thomson corey-taylor"; }
       .home-main-container .info-integrantes .container-integrantes .sid-wilson {
-        background: linear-gradient(to bottom, #000000b7, #00000071), url(../assets/img/band-members-section/sid-wilson-resumen.jpg);
-        width: 30vw;
-        height: 70vh;
-        padding: 20px;
-        margin: 20px 10px;
+        grid-area: sid-wilson;
+        background: url(../assets/img/band-members-section/sid-wilson-resumen.jpg);
         display: flex;
-        flex-direction: column;
         align-items: center;
-        text-align: justify;
+        flex-direction: column;
         justify-content: center;
-        background-position: center;
-        background-repeat: none;
         background-size: cover;
-        border-style: solid;
-        border-width: 1.5px;
-        border-color: #d22329;
-        border-radius: 11px; }
-      .home-main-container .info-integrantes .container-integrantes .jay-weinberg {
-        background: linear-gradient(to bottom, #000000b7, #00000071), url(../assets/img/band-members-section/jay-winberg-resumen.webp);
-        width: 30vw;
-        height: 70vh;
-        padding: 20px;
-        margin: 20px 10px;
+        width: 422px;
+        height: 187px; }
+        .home-main-container .info-integrantes .container-integrantes .sid-wilson h3 {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .sid-wilson p {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .sid-wilson:hover {
+          background: linear-gradient(to bottom, #000000b7, #00000071), url(../assets/img/band-members-section/sid-wilson-resumen.jpg);
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          background-size: cover; }
+          .home-main-container .info-integrantes .container-integrantes .sid-wilson:hover h3 {
+            display: block;
+            text-transform: uppercase;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .sid-wilson:hover p {
+            text-transform: uppercase;
+            display: block;
+            letter-spacing: 2px;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .sid-wilson:hover .numero-integrante {
+            font-size: xx-large; }
+      .home-main-container .info-integrantes .container-integrantes .jay-weimberg {
+        grid-area: jay-weimberg;
+        background: url(../assets/img/band-members-section/jay-winberg-resumen.webp);
         display: flex;
-        flex-direction: column;
         align-items: center;
-        text-align: justify;
+        flex-direction: column;
         justify-content: center;
-        background-position: center;
-        background-repeat: none;
         background-size: cover;
-        border-style: solid;
-        border-width: 1.5px;
-        border-color: #d22329;
-        border-radius: 11px; }
+        width: 422px;
+        height: 187px; }
+        .home-main-container .info-integrantes .container-integrantes .jay-weimberg h3 {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .jay-weimberg p {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .jay-weimberg:hover {
+          background: linear-gradient(to bottom, #000000b7, #00000071), url(../assets/img/band-members-section/jay-winberg-resumen.webp);
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          background-size: cover; }
+          .home-main-container .info-integrantes .container-integrantes .jay-weimberg:hover h3 {
+            display: block;
+            text-transform: uppercase;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .jay-weimberg:hover p {
+            text-transform: uppercase;
+            display: block;
+            letter-spacing: 2px;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .jay-weimberg:hover .numero-integrante {
+            font-size: xx-large; }
+      .home-main-container .info-integrantes .container-integrantes .alessandro-venturella {
+        grid-area: alessandro-venturella;
+        background: url(../assets/img/band-members-section/alessandro-venturella-resumen.jpg);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-size: cover;
+        width: 422px;
+        height: 187px; }
+        .home-main-container .info-integrantes .container-integrantes .alessandro-venturella h3 {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .alessandro-venturella p {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .alessandro-venturella:hover {
+          background: linear-gradient(to bottom, #000000b7, #00000071), url(../assets/img/band-members-section/alessandro-venturella-resumen.jpg);
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          background-size: cover; }
+          .home-main-container .info-integrantes .container-integrantes .alessandro-venturella:hover h3 {
+            display: block;
+            text-transform: uppercase;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .alessandro-venturella:hover p {
+            text-transform: uppercase;
+            display: block;
+            letter-spacing: 2px;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .alessandro-venturella:hover .numero-integrante {
+            font-size: xx-large; }
+      .home-main-container .info-integrantes .container-integrantes .michael-pfaff {
+        grid-area: michael-pfaff;
+        background: url(../assets/img/band-members-section/michael-pfaff-resumen.jpg);
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: center;
+        width: 212px;
+        height: 382px; }
+        .home-main-container .info-integrantes .container-integrantes .michael-pfaff h3 {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .michael-pfaff p {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .michael-pfaff:hover {
+          background: linear-gradient(to bottom, #000000b7, #00000071), url(../assets/img/band-members-section/michael-pfaff-resumen.jpg);
+          display: flex;
+          align-items: center;
+          background-size: cover;
+          flex-direction: column;
+          justify-content: center; }
+          .home-main-container .info-integrantes .container-integrantes .michael-pfaff:hover h3 {
+            display: block;
+            text-transform: uppercase;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .michael-pfaff:hover p {
+            text-transform: uppercase;
+            display: block;
+            letter-spacing: 2px;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .michael-pfaff:hover .numero-integrante {
+            font-size: xx-large; }
+      .home-main-container .info-integrantes .container-integrantes .imagen-banda {
+        grid-area: imagen-banda;
+        width: 846px;
+        height: 576px;
+        background-image: url(/assets/img/band-members-section/imagen-banda-2023.webp);
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: center; }
+        .home-main-container .info-integrantes .container-integrantes .imagen-banda h3 {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .imagen-banda p {
+          display: none; }
+      .home-main-container .info-integrantes .container-integrantes .jim-root {
+        grid-area: jim-root;
+        background: url(../assets/img/band-members-section/jim-root-resumen.jpg);
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: center;
+        width: 212px;
+        height: 382px; }
+        .home-main-container .info-integrantes .container-integrantes .jim-root h3 {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .jim-root p {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .jim-root:hover {
+          background: linear-gradient(to bottom, #000000b7, #00000071), url(../assets/img/band-members-section/jim-root-resumen.jpg);
+          display: flex;
+          align-items: center;
+          background-size: cover;
+          flex-direction: column;
+          justify-content: center; }
+          .home-main-container .info-integrantes .container-integrantes .jim-root:hover h3 {
+            display: block;
+            text-transform: uppercase;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .jim-root:hover p {
+            text-transform: uppercase;
+            display: block;
+            letter-spacing: 2px;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .jim-root:hover .numero-integrante {
+            font-size: xx-large; }
+      .home-main-container .info-integrantes .container-integrantes .craig-jones {
+        grid-area: craig-jones;
+        background: url(../assets/img/band-members-section/craig-jones-resumen.jpg);
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: center;
+        width: 212px;
+        height: 382px; }
+        .home-main-container .info-integrantes .container-integrantes .craig-jones h3 {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .craig-jones p {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .craig-jones:hover {
+          background: linear-gradient(to bottom, #000000b7, #00000071), url(../assets/img/band-members-section/craig-jones-resumen.jpg);
+          display: flex;
+          align-items: center;
+          background-size: cover;
+          flex-direction: column;
+          justify-content: center; }
+          .home-main-container .info-integrantes .container-integrantes .craig-jones:hover h3 {
+            display: block;
+            text-transform: uppercase;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .craig-jones:hover p {
+            text-transform: uppercase;
+            display: block;
+            letter-spacing: 2px;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .craig-jones:hover .numero-integrante {
+            font-size: xx-large; }
+      .home-main-container .info-integrantes .container-integrantes .shawn-crahan {
+        grid-area: shawn-crahan;
+        background: url(../assets/img/band-members-section/shawn-crahan-resumen.jpg);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-size: cover;
+        width: 422px;
+        height: 187px; }
+        .home-main-container .info-integrantes .container-integrantes .shawn-crahan h3 {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .shawn-crahan p {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .shawn-crahan:hover {
+          background: linear-gradient(to bottom, #000000b7, #00000071), url(../assets/img/band-members-section/shawn-crahan-resumen.jpg);
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          background-size: cover; }
+          .home-main-container .info-integrantes .container-integrantes .shawn-crahan:hover h3 {
+            display: block;
+            text-transform: uppercase;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .shawn-crahan:hover p {
+            text-transform: uppercase;
+            display: block;
+            letter-spacing: 2px;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .shawn-crahan:hover .numero-integrante {
+            font-size: xx-large; }
+      .home-main-container .info-integrantes .container-integrantes .mick-thomson {
+        grid-area: mick-thomson;
+        background: url(../assets/img/band-members-section/mick-thomson-resumen.jpg);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-size: cover;
+        width: 422px;
+        height: 187px; }
+        .home-main-container .info-integrantes .container-integrantes .mick-thomson h3 {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .mick-thomson p {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .mick-thomson:hover {
+          background: linear-gradient(to bottom, #000000b7, #00000071), url(../assets/img/band-members-section/mick-thomson-resumen.jpg);
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          background-size: cover; }
+          .home-main-container .info-integrantes .container-integrantes .mick-thomson:hover h3 {
+            display: block;
+            text-transform: uppercase;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .mick-thomson:hover p {
+            text-transform: uppercase;
+            display: block;
+            letter-spacing: 2px;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .mick-thomson:hover .numero-integrante {
+            font-size: xx-large; }
+      .home-main-container .info-integrantes .container-integrantes .corey-taylor {
+        grid-area: corey-taylor;
+        background: url(../assets/img/band-members-section/corey-taylor-resumen.jpg);
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: center;
+        width: 212px;
+        height: 382px; }
+        .home-main-container .info-integrantes .container-integrantes .corey-taylor h3 {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .corey-taylor p {
+          display: none; }
+        .home-main-container .info-integrantes .container-integrantes .corey-taylor:hover {
+          background: linear-gradient(to bottom, #000000b7, #00000071), url(../assets/img/band-members-section/corey-taylor-resumen.jpg);
+          display: flex;
+          align-items: center;
+          background-size: cover;
+          flex-direction: column;
+          justify-content: center; }
+          .home-main-container .info-integrantes .container-integrantes .corey-taylor:hover h3 {
+            display: block;
+            text-transform: uppercase;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .corey-taylor:hover p {
+            text-transform: uppercase;
+            display: block;
+            letter-spacing: 2px;
+            font-size: 25px; }
+          .home-main-container .info-integrantes .container-integrantes .corey-taylor:hover .numero-integrante {
+            font-size: xx-large; }
 
 .faq-main {
-  justify-content: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
   align-content: center;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  display: flex; }
+  justify-content: center; }
   .faq-main h1 {
     margin-top: 30px;
     text-transform: uppercase; }
