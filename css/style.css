@@ -41,17 +41,22 @@
       font-weight: bold; }
 
 .footer-container {
-  height: 20vh;
+  height: 35vh;
   margin-top: 30px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
-  padding: 30px;
-  border-color: #d22329;
+  padding: 10px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.267), black), url(../assets/img/album-cover/banner.jpg);
+  background-repeat: none;
+  background-position: top;
+  background-size: cover;
   display: flex;
   text-align: center;
   align-items: center;
   align-content: center;
   flex-direction: column;
   justify-content: center; }
+  .footer-container .logo-slipknot-footer {
+    width: 40px;
+    margin-bottom: 10px; }
   .footer-container h2 {
     font-size: large;
     text-transform: uppercase; }
@@ -80,7 +85,6 @@
       transition: .5s; }
 
 .footer-home-page {
-  background: linear-gradient(to bottom, #000000, #681111);
   margin: auto; }
 
 body {
@@ -302,7 +306,7 @@ body {
         grid-area: imagen-banda;
         width: 846px;
         height: 576px;
-        background-image: url(/assets/img/band-members-section/imagen-banda-2023.webp);
+        background-image: url(../assets/img/band-members-section/imagen-banda-2023.webp);
         display: flex;
         align-items: center;
         background-size: cover;
@@ -482,6 +486,7 @@ body {
   justify-content: center; }
   .faq-main h1 {
     margin-top: 30px;
+    font-size: 35px;
     text-transform: uppercase; }
   .faq-main .accordion {
     margin-top: 30px;
@@ -502,3 +507,158 @@ body {
       text-align: left; }
       .faq-main .accordion .accordion-collapse ul li {
         text-transform: none; }
+
+.album-page h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px; }
+
+.album-page .album-container {
+  background: url(../assets/img/album-cover/slipknot-banner-albums.webp);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 45vh; }
+  .album-page .album-container .slipknot-album {
+    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center; }
+    .album-page .album-container .slipknot-album .album-details {
+      border: 0px white;
+      width: 400px;
+      height: 400px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+      justify-content: center; }
+      .album-page .album-container .slipknot-album .album-details a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: bold; }
+        .album-page .album-container .slipknot-album .album-details a:hover {
+          color: red;
+          letter-spacing: 2px;
+          transition: .5s; }
+      .album-page .album-container .slipknot-album .album-details p {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 5px; }
+      .album-page .album-container .slipknot-album .album-details h2 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 35px;
+        padding: 10px;
+        margin-bottom: 50px; }
+    .album-page .album-container .slipknot-album img {
+      border: 1px solid white;
+      width: 360px;
+      height: auto; }
+    .album-page .album-container .slipknot-album .spotify-playlist {
+      width: 600px;
+      height: 400px; }
+    .album-page .album-container .slipknot-album .banner-corey {
+      width: 100vw;
+      background-image: url(../assets/img/album-cover/slipknot-banner.jpg);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+      justify-content: center; }
+
+.main-shows {
+  margin-top: 40px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center; }
+  .main-shows h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 30px; }
+  .main-shows .show-container {
+    padding-top: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.836); }
+  .main-shows ul li {
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    margin: 60px; }
+    .main-shows ul li a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      list-style-type: none; }
+      .main-shows ul li a:hover {
+        color: red; }
+    .main-shows ul li img {
+      width: 20px;
+      margin-right: 10px; }
+  .main-shows .show-options {
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .main-shows .show-options h2 {
+      font-size: 32px; }
+      .main-shows .show-options h2:hover {
+        color: red; }
+    .main-shows .show-options .option-show {
+      width: 400px;
+      height: auto;
+      display: flex;
+      margin-right: 15px;
+      align-items: center;
+      border: 1px solid red;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: rgba(0, 0, 0, 0.493); }
+      .main-shows .show-options .option-show a {
+        color: white;
+        text-decoration: none; }
+        .main-shows .show-options .option-show a:hover {
+          color: red; }
+      .main-shows .show-options .option-show p {
+        color: white;
+        text-align: center; }
+      .main-shows .show-options .option-show a img {
+        width: 20px;
+        margin-right: 10px; }
+      .main-shows .show-options .option-show img {
+        width: 398px;
+        height: auto; }

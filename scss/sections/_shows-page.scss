@@ -1,0 +1,86 @@
+.main-shows {
+    margin-top: 40px;
+    @include flex-column-center;
+    h1 {
+        color: white;
+        font-weight: bold;
+        font-size: $h1-font-size;
+        margin-bottom: $margen-top;
+    }
+    .show-container {
+        padding-top: 20px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: red;
+        @include flex-column-center;
+        background-color: rgba(0, 0, 0, 0.836);
+    }
+    ul {
+        li {
+            color: white;
+            font-weight: bold;
+            font-size: larger;
+            text-decoration: none;
+            list-style-type: none;
+            display: inline;
+            margin: 60px;
+            a {
+                color: white;
+                font-weight: bold;
+                text-decoration: none;
+                list-style-type: none;
+                &:hover {
+                    color: red;
+                }
+            }
+            img {
+                width: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .show-options {
+        margin: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        h2 {
+            font-size: $h2-font-size;
+            &:hover {
+                color: red
+            }
+        }
+    .option-show {
+        width: 400px;
+        height: auto;
+        display: flex;
+        margin-right: 15px;
+        align-items: center;
+        border: 1px solid red;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgba(0, 0, 0, 0.493);
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: red;
+            }
+        }
+        p {
+            color: white;
+            text-align: center;
+        }
+        a {
+            img {
+                width: 20px;
+                margin-right: 10px;
+            }
+        }
+        img {
+            width: 398px;
+            height: auto;
+        }
+    }
+    }
+}
