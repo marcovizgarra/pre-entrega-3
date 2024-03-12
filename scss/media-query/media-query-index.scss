@@ -1,0 +1,73 @@
+@media only screen and (max-width: 1390px) {
+    .video-box {
+        height: 67vh;
+    }
+}
+
+@media only screen and (max-width: 1002px) {
+    .home-main-container {
+        .info-integrantes {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .video-box {
+        .estrella-nueve-puntas {
+            width: 55vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .video-box {
+        .estrella-nueve-puntas {
+            width: 60vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 985px) {
+    .navbar {
+        .container-fluid {
+            @include flex-row-center;
+            .navbar-izquierda {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .video-box {
+        display: none;
+    }
+    .home-main-container {
+        .miembros-slipknot {
+            width: 100vw;
+            img {
+                &:hover {
+                    width: 150px;
+                }
+            }
+        }
+        .info-banda {
+            #logo-slipknot-info {
+                margin-top: ($margen-top*3);
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .home-main-container {
+        .info-banda {
+            #logo-slipknot-info {
+                margin-top: ($margen-top*3);
+                width: 250px;
+            }
+        }
+    }
+}

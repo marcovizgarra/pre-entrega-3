@@ -95,9 +95,6 @@
             height: 350px;
             @include flex-column-center;
             h2 {
-                // animation: flash;
-                // animation-duration: .5s;
-                // animation: flash 0.5s delay 2s infinite;
                 width: max-content;
                 letter-spacing: 20px;
                 text-transform: uppercase;
@@ -169,13 +166,8 @@
             }
             .imagen-banda {
                 grid-area: imagen-banda;
-                width: 846px;
-                height: 576px;
                 background-image: url(../assets/img/band-members-section/imagen-banda-2023.webp);
                 @include imagen-banda;
-                // &:hover {
-
-                // }
             }
             .jim-root {
                 grid-area: jim-root;

@@ -23,8 +23,9 @@
     flex-direction: column;
     justify-content: center;
     background-size: cover;
-    width: 422px;
-    height: 187px;
+    background-position: center;
+    width: 21.97vw;
+    height: 19.62vh;
     h3 {
         display: none;
     }
@@ -60,9 +61,10 @@
     align-items: center;
     background-size: cover;
     flex-direction: column;
+    background-position: center;
     justify-content: center;
-    width: 212px;
-    height: 382px;
+    width: 11.04vw;
+    height: 40.08vh;
     h3 {
         display: none;
     }
@@ -94,10 +96,13 @@
 }
 
 @mixin imagen-banda {
+    width: 44.06vw;
+    height: 60.44vh;
     display: flex;
     align-items: center;
     background-size: cover;
     flex-direction: column;
+    background-position: center;
     justify-content: center;
     h3 {
         display: none;

@@ -1,0 +1,28 @@
+@media only screen and (max-width: 1390px) {
+    .navbar {
+        height: 33vh;
+        padding: 0;
+        margin: 0;
+        .container-fluid {
+            @include flex-column-center;
+            height: auto;
+            ul {
+                width: auto;
+                height: auto;
+            }
+            .navbar-centro {
+                img {
+                    width: 280px;
+                }
+            }
+            .navbar-derecha {
+                ul {
+                    li {
+                        margin: 0 20px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
