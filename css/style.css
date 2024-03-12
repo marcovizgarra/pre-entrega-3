@@ -653,24 +653,32 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.836); }
-  .main-shows ul li {
-    color: white;
-    font-weight: bold;
-    font-size: larger;
-    text-decoration: none;
-    list-style-type: none;
-    display: inline;
-    margin: 60px; }
-    .main-shows ul li a {
+  .main-shows ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center; }
+    .main-shows ul li {
       color: white;
       font-weight: bold;
+      font-size: larger;
       text-decoration: none;
-      list-style-type: none; }
-      .main-shows ul li a:hover {
-        color: red; }
-    .main-shows ul li img {
-      width: 20px;
-      margin-right: 10px; }
+      list-style-type: none;
+      display: inline;
+      margin: 0 60px; }
+      .main-shows ul li a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        list-style-type: none; }
+        .main-shows ul li a:hover {
+          color: red; }
+      .main-shows ul li img {
+        width: 20px;
+        margin-right: 10px; }
   .main-shows .show-options {
     margin: 25px;
     display: flex;
@@ -682,7 +690,7 @@ body {
         color: red; }
     .main-shows .show-options .option-show {
       width: 400px;
-      height: auto;
+      height: 255.2px;
       display: flex;
       margin-right: 15px;
       align-items: center;
@@ -808,3 +816,14 @@ body {
   .home-main-container .info-banda #logo-slipknot-info {
     margin-top: 90px;
     width: 250px; } }
+
+@media only screen and (max-width: 1340px) {
+  .main-shows .show-container .show-options {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center; }
+    .main-shows .show-container .show-options .option-show {
+      margin: 10px 0; } }

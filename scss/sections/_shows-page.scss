@@ -23,7 +23,7 @@
             text-decoration: none;
             list-style-type: none;
             display: inline;
-            margin: 60px;
+            margin: 0 60px;
             a {
                 color: white;
                 font-weight: bold;
@@ -38,6 +38,7 @@
                 margin-right: 10px;
             }
         }
+        @include flex-row-center;
     }
     .show-options {
         margin: 25px;
@@ -52,7 +53,7 @@
         }
     .option-show {
         width: 400px;
-        height: auto;
+        height: 255.2px;
         display: flex;
         margin-right: 15px;
         align-items: center;
