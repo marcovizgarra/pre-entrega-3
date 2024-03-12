@@ -68,11 +68,11 @@
         }
         .resumen-banda {
             text-align: justify;
-            background-image: linear-gradient( to left, 
-            rgba(0, 0, 0, 0.849),
-            rgba(0, 0, 0, 0.712)),
-            url(../assets/img/9-point-star-half.png);
-
+            background-image: linear-gradient( 
+                to left, 
+                rgba(0, 0, 0, 0.849),
+                rgba(0, 0, 0, 0.712)),
+                url(../assets/img/9-point-star-half.png);
             background-position: right;
             background-size: 22vw;
             background-repeat: no-repeat;
@@ -81,19 +81,25 @@
 
     .info-integrantes {
         margin-bottom: ($margen-top*8);
-        .prueba {
+        .galeria-imagenes {
             background-image: linear-gradient(
                 to top, 
                 #0000008e,
                 #0000008e),
-                url(../assets/img/9-point-star.png);
+                url(../assets/img/band-members-section/cf61081ddbc2c005b875f36b36290141.jpg);
             background-position: center;
             background-size: cover;
+            margin-top: ($margen-top*4);
+            margin-bottom: ($margen-top*4);
             width: 350px;
             height: 350px;
             @include flex-column-center;
             h2 {
-                letter-spacing: 4px;
+                // animation: flash;
+                // animation-duration: .5s;
+                // animation: flash 0.5s delay 2s infinite;
+                width: max-content;
+                letter-spacing: 20px;
                 text-transform: uppercase;
             }
         }
