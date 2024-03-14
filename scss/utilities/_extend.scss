@@ -1,3 +1,4 @@
+/*Aplicación general*/
 @mixin flex-column-center {
     display: flex;
     text-align: center;
@@ -17,6 +18,7 @@
     justify-content: center;
 }
 
+/*Home page - integrantes de la banda en galería de imágenes*/
 @mixin integrante-horizontal {
     display: flex;
     align-items: center;
@@ -110,4 +112,76 @@
     p {
         display: none;
     }
+}
+
+/*Albums page - contenedores de los álbumes*/
+@mixin album-container-1 {
+    height: 45vh;
+    margin-bottom: 15px;
+    background: url(../assets/img/album-cover/background-container-album.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+} 
+
+@mixin album-container-2 {
+    height: 45vh;
+    margin-bottom: 15px;
+    background: url(../assets/img/album-cover/background-container-album.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+@mixin album-container-3 {
+    height: 45vh;
+    margin-bottom: 15px;
+    background: url(../assets/img/album-cover/background-container-album.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+} 
+
+@mixin album-details {
+    border: 0px white;
+    width: 400px;
+    height: 400px;
+}
+
+@mixin img-album-containers {
+    border: 1px solid white;
+    width: 360px;
+    height: auto;
+}
+
+@mixin spotify-iframe {
+    width: 600px;
+    height: 400px;
+}
+
+@mixin album-details-h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 35px;
+    padding: 10px;;
+    margin-bottom: 50px;
+}
+
+@mixin album-details-a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    &:hover {
+        color: red;
+        letter-spacing: 2px;
+        transition: .5s;}
+}
+
+@mixin album-details-p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
 }

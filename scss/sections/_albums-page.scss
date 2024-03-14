@@ -6,64 +6,86 @@
         text-align: center;
         margin-top: $margen-top;
     }
-    .album-container {
-        background: url(../assets/img/album-cover/slipknot-banner-albums.webp);
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-        @include flex-column-center;
-        height: 45vh;
+    .album-container-1 {
         .slipknot-album {
             flex-wrap: wrap;
             @include flex-row-center;
             .album-details {
-                border: 0px white;
-                width: 400px;
-                height: 400px;
+                @include album-details;
                 @include flex-column-center;
                 a {
-                    color: white;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    font-size: 20px;
-                    font-weight: bold;
-                    &:hover {
-                        color: red;
-                        letter-spacing: 2px;
-                        transition: .5s;
+                    @include album-details-a;
                     }
                 }
                 p {
-                    color: white;
-                    font-weight: bold;
-                    font-size: 20px;
-                    margin-bottom: 5px;
+                    @include album-details-p;
                 }
                 h2 {
-                    color: white;
-                    text-transform: uppercase;
-                    font-size: 35px;
-                    padding: 10px;;
-                    margin-bottom: 50px;
+                    @include album-details-h2;
                 }
             }
         img {
-            border: 1px solid white;
-            width: 360px;
-            height: auto;
+            @include img-album-containers;
         }
         .spotify-playlist {
-            width: 600px;
-            height: 400px;
+            @include spotify-iframe;
         }
-        .banner-corey {
-            width: 100vw;
-            background-image: url(../assets/img/album-cover/slipknot-banner.jpg);
-            background-size: cover;
-            background-position: center;
-            @include flex-column-center;
+        @include album-container-1;
+        @include flex-column-center;
+    }
+    .album-container-2 {
+        .slipknot-album {
+            flex-wrap: wrap;
+            @include flex-row-center;
+            .album-details {
+                @include album-details;
+                @include flex-column-center;
+                a {
+                    @include album-details-a;
+                    }
+                }
+                p {
+                    @include album-details-p;
+                }
+                h2 {
+                    @include album-details-h2;
+                }
+            }
+        img {
+            @include img-album-containers;
         }
+        .spotify-playlist {
+            @include spotify-iframe;
         }
+        @include album-container-2;
+        @include flex-column-center;
+    }
+    .album-container-3 {
+        .slipknot-album {
+            flex-wrap: wrap;
+            @include flex-row-center;
+            .album-details {
+                @include album-details;
+                @include flex-column-center;
+                a {
+                    @include album-details-a;
+                    }
+                }
+                p {
+                    @include album-details-p;
+                }
+                h2 {
+                    @include album-details-h2;
+                }
+            }
+        img {
+            @include img-album-containers;
+        }
+        .spotify-playlist {
+            @include spotify-iframe;
+        }
+        @include album-container-3;
+        @include flex-column-center;
     }
 }
 

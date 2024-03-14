@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 * {
   font-family: "Oswald", sans-serif;
@@ -6,6 +7,9 @@
   color: white;
   margin: 0; }
 
+/*Aplicación general*/
+/*Home page - integrantes de la banda en galería de imágenes*/
+/*Albums page - contenedores de los álbumes*/
 .navbar {
   background-color: #00000000;
   padding-top: 1.5vw;
@@ -557,8 +561,10 @@ body {
   text-align: center;
   margin-top: 30px; }
 
-.album-page .album-container {
-  background: url(../assets/img/album-cover/slipknot-banner-albums.webp);
+.album-page .album-container-1 {
+  height: 45vh;
+  margin-bottom: 15px;
+  background: url(../assets/img/album-cover/background-container-album.jpg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -567,9 +573,8 @@ body {
   align-items: center;
   align-content: center;
   flex-direction: column;
-  justify-content: center;
-  height: 45vh; }
-  .album-page .album-container .slipknot-album {
+  justify-content: center; }
+  .album-page .album-container-1 .slipknot-album {
     flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
@@ -578,7 +583,7 @@ body {
     flex-direction: row;
     align-content: center;
     justify-content: center; }
-    .album-page .album-container .slipknot-album .album-details {
+    .album-page .album-container-1 .slipknot-album .album-details {
       border: 0px white;
       width: 400px;
       height: 400px;
@@ -588,45 +593,156 @@ body {
       align-content: center;
       flex-direction: column;
       justify-content: center; }
-      .album-page .album-container .slipknot-album .album-details a {
+      .album-page .album-container-1 .slipknot-album .album-details a {
         color: white;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 20px;
         font-weight: bold; }
-        .album-page .album-container .slipknot-album .album-details a:hover {
+        .album-page .album-container-1 .slipknot-album .album-details a:hover {
           color: red;
           letter-spacing: 2px;
           transition: .5s; }
-      .album-page .album-container .slipknot-album .album-details p {
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-        margin-bottom: 5px; }
-      .album-page .album-container .slipknot-album .album-details h2 {
-        color: white;
-        text-transform: uppercase;
-        font-size: 35px;
-        padding: 10px;
-        margin-bottom: 50px; }
-    .album-page .album-container .slipknot-album img {
-      border: 1px solid white;
-      width: 360px;
-      height: auto; }
-    .album-page .album-container .slipknot-album .spotify-playlist {
-      width: 600px;
-      height: 400px; }
-    .album-page .album-container .slipknot-album .banner-corey {
-      width: 100vw;
-      background-image: url(../assets/img/album-cover/slipknot-banner.jpg);
-      background-size: cover;
-      background-position: center;
+    .album-page .album-container-1 .slipknot-album p {
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 5px; }
+    .album-page .album-container-1 .slipknot-album h2 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 35px;
+      padding: 10px;
+      margin-bottom: 50px; }
+  .album-page .album-container-1 img {
+    border: 1px solid white;
+    width: 360px;
+    height: auto; }
+  .album-page .album-container-1 .spotify-playlist {
+    width: 600px;
+    height: 400px; }
+
+.album-page .album-container-2 {
+  height: 45vh;
+  margin-bottom: 15px;
+  background: url(../assets/img/album-cover/background-container-album.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center; }
+  .album-page .album-container-2 .slipknot-album {
+    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center; }
+    .album-page .album-container-2 .slipknot-album .album-details {
+      border: 0px white;
+      width: 400px;
+      height: 400px;
       display: flex;
       text-align: center;
       align-items: center;
       align-content: center;
       flex-direction: column;
       justify-content: center; }
+      .album-page .album-container-2 .slipknot-album .album-details a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: bold; }
+        .album-page .album-container-2 .slipknot-album .album-details a:hover {
+          color: red;
+          letter-spacing: 2px;
+          transition: .5s; }
+    .album-page .album-container-2 .slipknot-album p {
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 5px; }
+    .album-page .album-container-2 .slipknot-album h2 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 35px;
+      padding: 10px;
+      margin-bottom: 50px; }
+  .album-page .album-container-2 img {
+    border: 1px solid white;
+    width: 360px;
+    height: auto; }
+  .album-page .album-container-2 .spotify-playlist {
+    width: 600px;
+    height: 400px; }
+
+.album-page .album-container-3 {
+  height: 45vh;
+  margin-bottom: 15px;
+  background: url(../assets/img/album-cover/background-container-album.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center; }
+  .album-page .album-container-3 .slipknot-album {
+    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center; }
+    .album-page .album-container-3 .slipknot-album .album-details {
+      border: 0px white;
+      width: 400px;
+      height: 400px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+      justify-content: center; }
+      .album-page .album-container-3 .slipknot-album .album-details a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: bold; }
+        .album-page .album-container-3 .slipknot-album .album-details a:hover {
+          color: red;
+          letter-spacing: 2px;
+          transition: .5s; }
+    .album-page .album-container-3 .slipknot-album p {
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 5px; }
+    .album-page .album-container-3 .slipknot-album h2 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 35px;
+      padding: 10px;
+      margin-bottom: 50px; }
+  .album-page .album-container-3 img {
+    border: 1px solid white;
+    width: 360px;
+    height: auto; }
+  .album-page .album-container-3 .spotify-playlist {
+    width: 600px;
+    height: 400px; }
 
 .main-shows {
   margin-top: 40px;
