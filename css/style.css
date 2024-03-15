@@ -874,13 +874,14 @@ body {
     padding: 0;
     margin: 0; }
     .navbar .container-fluid {
+      height: auto;
+      margin: 0;
       display: flex;
       text-align: center;
       align-items: center;
       align-content: center;
       flex-direction: column;
-      justify-content: center;
-      height: auto; }
+      justify-content: center; }
       .navbar .container-fluid ul {
         width: auto;
         height: auto; }
@@ -888,6 +889,25 @@ body {
         width: 280px; }
       .navbar .container-fluid .navbar-derecha ul li {
         margin: 0 20px; } }
+
+@media only screen and (max-width: 990px) {
+  .navbar {
+    height: auto; }
+    .navbar .container-fluid {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      align-items: center;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center; }
+      .navbar .container-fluid .navbar-izquierda {
+        display: none; }
+      .navbar .container-fluid .navbar-centro {
+        align-items: center; }
+        .navbar .container-fluid .navbar-centro img {
+          margin-top: 30px;
+          margin-bottom: 30px; } }
 
 @media only screen and (max-width: 1390px) {
   .video-box {
@@ -904,18 +924,6 @@ body {
 @media only screen and (max-width: 768px) {
   .video-box .estrella-nueve-puntas {
     width: 60vw; } }
-
-@media only screen and (max-width: 985px) {
-  .navbar .container-fluid {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center; }
-    .navbar .container-fluid .navbar-izquierda {
-      display: none; } }
 
 @media only screen and (max-width: 550px) {
   .video-box {

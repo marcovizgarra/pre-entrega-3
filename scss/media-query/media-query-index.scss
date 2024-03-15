@@ -28,17 +28,6 @@
     }
 }
 
-@media only screen and (max-width: 985px) {
-    .navbar {
-        .container-fluid {
-            @include flex-row-center;
-            .navbar-izquierda {
-                display: none;
-            }
-        }
-    }
-}
-
 @media only screen and (max-width: 550px) {
     .video-box {
         display: none;

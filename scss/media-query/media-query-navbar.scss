@@ -4,8 +4,8 @@
         padding: 0;
         margin: 0;
         .container-fluid {
-            @include flex-column-center;
             height: auto;
+            margin: 0;
             ul {
                 width: auto;
                 height: auto;
@@ -22,7 +22,26 @@
                     }
                 }
             }
+        @include flex-column-center; ;
         }
     }
-    
+}
+
+@media only screen and (max-width: 990px) {
+    .navbar {
+        height: auto;
+        .container-fluid {
+            @include flex-row-center;
+            .navbar-izquierda {
+                display: none;
+            }
+            .navbar-centro {
+                align-items: center;
+                img {
+                    margin-top: $margen-top;
+                    margin-bottom: $margen-top;
+                }
+            }
+        }
+    }
 }
