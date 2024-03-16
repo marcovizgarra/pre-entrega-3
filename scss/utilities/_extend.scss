@@ -117,8 +117,8 @@
 /*Albums page - contenedores de los álbumes*/
 @mixin album-container-1 {
     height: 45vh;
-    margin-bottom: 15px;
-    background: url(../assets/img/album-cover/background-container-album.jpg);
+    margin-bottom: 1.5vh;
+    background: url(../assets/img/album-cover/fila-1-columna-1.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -126,8 +126,8 @@
 
 @mixin album-container-2 {
     height: 45vh;
-    margin-bottom: 15px;
-    background: url(../assets/img/album-cover/background-container-album.jpg);
+    margin-bottom: 1vh;
+    background: url(../assets/img/album-cover/fila-2-columna-1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -135,10 +135,10 @@
 
 @mixin album-container-3 {
     height: 45vh;
-    margin-bottom: 15px;
-    background: url(../assets/img/album-cover/background-container-album.jpg);
+    margin-bottom: 1vh;
+    background: url(../assets/img/album-cover/fila-3-columna-1.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
 } 
 
