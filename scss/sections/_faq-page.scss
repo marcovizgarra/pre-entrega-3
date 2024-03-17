@@ -12,21 +12,31 @@
         --bs-accordion-bg: #242020;
         --bs-accordion-color: white;
         --bs-accordion-btn-color: white;
+        --bs-accordion-border-radius: 0px;
+        --bs-accordion-inner-border-radius:0px;
         --bs-accordion-border-color: #d22329;
         --bs-accordion-btn-focus-box-shadow: none;
         --bs-accordion-active-bg: #d22329;
         --bs-accordion-active-color: white;
         button{
             text-transform: uppercase;
-            font-weight: bold;
+            font-weight: 1vw;
             letter-spacing: 5px;
         }
-
-        .accordion-collapse {
-            ul {
-                text-align: left;
-                li {
-                    text-transform: none;
+        .accordion-item {
+            h2 {
+                font-size: 25px;
+            }
+            .accordion-collapse {
+                ul {
+                    text-align: left;
+                    li {
+                        list-style-type: square;
+                        background-repeat: no-repeat;
+                        font-size: 26px;
+                        text-transform: none;
+                        font-weight: lighter;
+                    }
                 }
             }
         }

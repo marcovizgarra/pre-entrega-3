@@ -1,0 +1,51 @@
+@media only screen and (max-width: 1600px) {
+    .faq-main {
+        .accordion {
+            width: 80vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .faq-main {
+        .accordion {
+            width: 85vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .faq-main {
+        .accordion {
+            width: 85vw;
+            .accordion-item {
+                h2 {
+                    font-size: 22px;
+                }
+                .accordion-collapse {
+                    ul {
+                        li {
+                            font-size: 22px;                          
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .faq-main {
+        h1 {
+            font-size: ($h1-font-size/1.2);
+        }
+        .accordion {
+            width: 100vw;
+            .accordion-item {
+                h2 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
