@@ -10,6 +10,7 @@
 /*Aplicación general*/
 /*Home page - integrantes de la banda en galería de imágenes*/
 /*Albums page - contenedores de los álbumes*/
+/*Merchandising page*/
 .navbar {
   background-color: #00000000;
   padding-top: 1.5vw;
@@ -51,10 +52,10 @@
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
 .footer-container {
-  height: 35vh;
+  height: max-content;
   margin-top: 30px;
   padding: 10px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.267), black), url(../assets/img/album-cover/banner.jpg);
+  background: linear-gradient(to top, #00000044, #000000), url(../assets/img/album-cover/banner.jpg);
   background-repeat: none;
   background-position: top;
   background-size: cover;
@@ -98,9 +99,8 @@
   margin: auto; }
 
 body {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.596)), url(../assets/img/fuego-rojo-background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.963), rgba(0, 0, 0, 0.847)), url(../assets/img/fuego-rojo-background.jpg);
+  background-size: contain; }
 
 .video-box {
   width: 100%;
@@ -847,8 +847,73 @@ body {
   justify-content: center; }
   .main-merch h1 {
     font-size: 35px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: 10px; }
+  .main-merch .banner-remeras {
+    background: radial-gradient(circle at 0% 50%, #4a005ccb, #000000d5, #000000), url(../assets/img/merch/banner-merch-page-remeras.jpg);
+    border-bottom: .5px solid white;
+    border-top: .5px solid white;
+    margin-top: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 54.36vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center; }
+    .main-merch .banner-remeras h2 {
+      text-transform: uppercase;
+      font-weight: lighter;
+      font-size: 57.6px;
+      letter-spacing: 40px; }
+  .main-merch .banner-buzos {
+    background: radial-gradient(circle at 0% 50%, #4a005ccb, #000000d5, #000000), url(../assets/img/merch/banner-merch-page-buzos.jpg);
+    border-bottom: .5px solid white;
+    border-top: .5px solid white;
+    margin-top: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 54.36vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center; }
+    .main-merch .banner-buzos h2 {
+      text-transform: uppercase;
+      font-weight: lighter;
+      font-size: 57.6px;
+      letter-spacing: 40px; }
+  .main-merch .banner-otros-productos {
+    background: radial-gradient(circle at 0% 50%, #4a005ccb, #000000d5, #000000), url(../assets/img/merch/banner-merch-page-otros.jpg);
+    border-bottom: .5px solid white;
+    border-top: .5px solid white;
+    margin-top: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 54.36vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center; }
+    .main-merch .banner-otros-productos h2 {
+      text-transform: uppercase;
+      font-weight: lighter;
+      font-size: 57.6px;
+      letter-spacing: 40px; }
   .main-merch .merch-container {
+    width: 90vw;
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -858,13 +923,31 @@ body {
     align-content: center;
     justify-content: center; }
     .main-merch .merch-container .card {
-      margin: 0 11px;
-      height: 580px;
-      text-align: center; }
+      margin: 20px 10px;
+      width: 15rem;
+      text-align: center;
+      --bs-card-border-radius: 0px;
+      --bs-card-inner-border-radius: 0px; }
+      .main-merch .merch-container .card .img-merch-item .img-hover {
+        display: none; }
+      .main-merch .merch-container .card .img-merch-item:hover {
+        background-color: rgba(128, 128, 128, 0.188); }
+        .main-merch .merch-container .card .img-merch-item:hover .img-front {
+          display: none; }
+        .main-merch .merch-container .card .img-merch-item:hover .img-hover {
+          display: block; }
       .main-merch .merch-container .card h5 {
+        font-weight: lighter;
+        height: 80px;
+        font-size: 22px;
         text-transform: uppercase; }
+      .main-merch .merch-container .card p {
+        font-weight: lighter;
+        margin-bottom: 6px;
+        color: gray; }
       .main-merch .merch-container .card ul li {
-        height: 40px;
+        padding: 5px;
+        font-weight: lighter;
         background-color: #130303;
         list-style-type: none; }
       .main-merch .merch-container .card ul .comprar {
@@ -874,6 +957,25 @@ body {
           color: white;
           background-color: red;
           letter-spacing: 3px;
+          transition: .5s; }
+      .main-merch .merch-container .card .card-body {
+        padding: 0;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center; }
+      .main-merch .merch-container .card button {
+        text-transform: uppercase;
+        color: white;
+        background-color: #d22329; }
+        .main-merch .merch-container .card button:hover {
+          color: yellow;
+          background-color: black;
+          border-color: yellow;
+          border-style: solid;
+          letter-spacing: 2px;
           transition: .5s; }
 
 @media only screen and (max-width: 1390px) {
@@ -983,3 +1085,12 @@ body {
     width: 100vw; }
     .faq-main .accordion .accordion-item h2 {
       font-size: 20px; } }
+
+@media only screen and (max-width: 390px) {
+  .main-merch .merch-container .card {
+    width: 300px; } }
+
+@media only screen and (max-width: 1390px) {
+  .album-page .album-container-1 .slipknot-album .spotify-playlist {
+    width: 40vw;
+    height: 152px; } }

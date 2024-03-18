@@ -1,10 +1,10 @@
 .footer-container {
-    height: 35vh;
+    height: max-content;
     margin-top: $margen-top;
     padding: 10px;
     background: linear-gradient(to top,
-    rgba(0, 0, 0, 0.267),
-    rgb(0, 0, 0)),
+    #00000044,
+    #000000),
     url(../assets/img/album-cover/banner.jpg);
     background-repeat: none;
     background-position: top;

@@ -185,3 +185,22 @@
     font-size: 20px;
     margin-bottom: 5px;
 }
+
+/*Merchandising page*/
+@mixin banner-merch-items {
+    border-bottom: .5px solid white;
+    border-top: .5px solid white;
+    margin-top: $margen-top;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 54.36vh;
+}
+
+@mixin merch-banner-h2 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: ($h2-font-size*1.8);
+    letter-spacing: 40px;
+}
