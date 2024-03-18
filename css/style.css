@@ -718,6 +718,8 @@ body {
     .album-page .album-container-3 .slipknot-album .carousel .carousel-inner .carousel-item {
       width: 390px;
       height: auto; }
+      .album-page .album-container-3 .slipknot-album .carousel .carousel-inner .carousel-item iframe {
+        width: 320px; }
     .album-page .album-container-3 .slipknot-album .carousel .carousel-inner .carousel-details {
       background: radial-gradient(#680088a9, #000000de), url(/assets/img/album-cover/album-details-background-corey.jpg);
       background-size: cover;
@@ -1106,3 +1108,22 @@ body {
 @media only screen and (max-width: 390px) {
   .main-merch .merch-container .card {
     width: 300px; } }
+
+@media only screen and (max-width: 1390px) {
+  .album-page .album-container-1 .slipknot-album .spotify-playlist {
+    width: 40vw;
+    height: 152px; }
+  .album-page .album-container-2 .slipknot-album .spotify-playlist {
+    width: 40vw;
+    height: 152px; }
+  .album-page .album-container-3 .slipknot-album .spotify-playlist {
+    width: 40vw;
+    height: 152px; } }
+
+@media only screen and (max-width: 425px) {
+  .album-page .album-container-1 .slipknot-album .spotify-playlist {
+    display: none; }
+  .album-page .album-container-2 .slipknot-album .spotify-playlist {
+    display: none; }
+  .album-page .album-container-3 .slipknot-album .spotify-playlist {
+    display: none; } }

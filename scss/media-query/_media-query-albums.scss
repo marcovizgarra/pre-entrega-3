@@ -1,28 +1,54 @@
-// @media only screen and (max-width: 1390px) {
-//     .album-page {
-//         .album-container-1 {
-//             .slipknot-album {
-//                 .spotify-playlist {
-//                     width: 40vw;
-//                     height: 152px;
-//                 }
-//             }
-//         }
-//         .album-container-2 {
-//             .slipknot-album {
-//                 .spotify-playlist {
-//                     width: 40vw;
-//                     height: 152px;
-//                 }
-//             }
-//         }
-//         .album-container-3 {
-//             .slipknot-album {
-//                 .spotify-playlist {
-//                     width: 40vw;
-//                     height: 152px;
-//                 }
-//             }
-//         }
-//     }       
-// }
+@media only screen and (max-width: 1390px) {
+    .album-page {
+        .album-container-1 {
+            .slipknot-album {
+                .spotify-playlist {
+                    width: 40vw;
+                    height: 152px;
+                }
+            }
+        }
+        .album-container-2 {
+            .slipknot-album {
+                .spotify-playlist {
+                    width: 40vw;
+                    height: 152px;
+                }
+            }
+        }
+        .album-container-3 {
+            .slipknot-album {
+                .spotify-playlist {
+                    width: 40vw;
+                    height: 152px;
+                }
+            }
+        }
+    }       
+}
+
+@media only screen and (max-width: 425px) {
+    .album-page {
+        .album-container-1 {
+            .slipknot-album {
+                .spotify-playlist {
+                    display: none;
+                }
+            }
+        }
+        .album-container-2 {
+            .slipknot-album {
+                .spotify-playlist {
+                    display: none;
+                }
+            }
+        }
+        .album-container-3 {
+            .slipknot-album {
+                .spotify-playlist {
+                    display: none;
+                }
+            }
+        }
+    }       
+}
