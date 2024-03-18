@@ -8,8 +8,6 @@
     }
     .album-container-1 {
         .slipknot-album {
-            flex-wrap: wrap;
-            @include flex-row-center;
             .album-details {
                 @include album-details;
                 @include flex-column-center;
@@ -23,8 +21,11 @@
                 h2 {
                     @include album-details-h2;
                 }
+                @include flex-row-center;
+                flex-wrap: nowrap;
             }
         img {
+            margin: 0 15px;
             @include img-album-containers;
         }
         .spotify-playlist {
@@ -35,8 +36,6 @@
     }
     .album-container-2 {
         .slipknot-album {
-            flex-wrap: wrap;
-            @include flex-row-center;
             .album-details {
                 @include album-details;
                 @include flex-column-center;
@@ -50,8 +49,11 @@
                 h2 {
                     @include album-details-h2;
                 }
+                @include flex-row-center;
+                flex-wrap: nowrap;
             }
         img {
+            margin: 0 15px;
             @include img-album-containers;
         }
         .spotify-playlist {
@@ -62,8 +64,33 @@
     }
     .album-container-3 {
         .slipknot-album {
-            flex-wrap: wrap;
-            @include flex-row-center;
+            .carousel {
+                .carousel-inner {
+                    .carousel-item{
+                        width: 390px;
+                        height: auto;
+                    }
+                    .carousel-details {
+                        background: radial-gradient(
+                            #680088a9,
+                            #000000de),
+                            url(/assets/img/album-cover/album-details-background-corey.jpg);
+                        background-size: cover;
+                        width: 390px;
+                        height: 390px;
+                        background-color: black;
+                        .carousel-caption {
+                            h5 {
+                                font-weight: lighter;
+                                text-transform: uppercase;
+                            }
+                            p {
+                                font-weight: lighter;
+                            }
+                        }
+                    }
+                }
+            }
             .album-details {
                 @include album-details;
                 @include flex-column-center;
@@ -77,8 +104,11 @@
                 h2 {
                     @include album-details-h2;
                 }
+                @include flex-row-center;
+                flex-wrap: nowrap;
             }
         img {
+            margin: 0 15px;
             @include img-album-containers;
         }
         .spotify-playlist {
