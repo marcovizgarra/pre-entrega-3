@@ -64,20 +64,24 @@
     }
     .album-container-3 {
         .slipknot-album {
+            .spotify-playlist {
+                border-style: white 1px none;
+                width: auto;
+                height: auto;
+            }
             .carousel {
                 .carousel-inner {
                     .carousel-item{
-                        width: 390px;
-                        height: auto;
                         iframe {
-                            width: 320px;
+                            width: 100%;
+                            height: 352px;
                         }
                     }
                     .carousel-details {
                         background: radial-gradient(
                             #680088a9,
                             #000000de),
-                            url(/assets/img/album-cover/album-details-background-corey.jpg);
+                            url(../assets/img/album-cover/album-details-background-corey.jpg);
                         background-size: cover;
                         width: 390px;
                         height: 390px;
@@ -114,9 +118,9 @@
             margin: 0 15px;
             @include img-album-containers;
         }
-        .spotify-playlist {
-            @include spotify-iframe;
-        }
+        // .spotify-playlist {
+        //     @include spotify-iframe;
+        // }
         @include album-container-3;
         @include flex-column-center;
     }
