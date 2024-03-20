@@ -45,3 +45,15 @@
         }
     }
 }
+
+@media only screen and (max-width: 376px) {
+    .navbar {
+        .container-fluid {
+            .navbar-centro {
+                img {
+                    width: 190px;
+                }
+            }
+        }
+    }
+}

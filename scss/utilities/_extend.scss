@@ -115,75 +115,44 @@
 }
 
 /*Albums page - contenedores de los álbumes*/
-@mixin album-container-1 {
-    height: 45vh;
+@mixin album-container {
+    height: 50vh;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     margin-bottom: 1.5vh;
-    background: url(../assets/img/album-cover/fila-1-columna-1.jpg);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-} 
-
-@mixin album-container-2 {
-    height: 45vh;
-    margin-bottom: 1vh;
-    background: url(../assets/img/album-cover/fila-2-columna-1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} 
-
-@mixin album-container-3 {
-    height: 45vh;
-    margin-bottom: 1vh;
     background: url(../assets/img/album-cover/fila-3-columna-1.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
 } 
 
-@mixin album-details {
-    border: 0px white;
-    width: 400px;
-    height: 400px;
-}
-
-@mixin img-album-containers {
+@mixin album-details-gral {
     border: 1px solid white;
-    width: 360px;
-    height: auto;
+    width: 390px;
+    height: 390px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    text-align: center;
+    h5 {
+        font-weight: lighter;
+        text-transform: uppercase;
+    }
+    p {
+        font-weight: lighter;
+    }
 }
 
 @mixin spotify-iframe {
     width: 600px;
     height: 352px;
-}
-
-@mixin album-details-h2 {
-    color: white;
-    text-transform: uppercase;
-    font-size: 35px;
-    padding: 10px;;
-    margin-bottom: 50px;
-}
-
-@mixin album-details-a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
-    &:hover {
-        color: red;
-        letter-spacing: 2px;
-        transition: .5s;}
-}
-
-@mixin album-details-p {
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 5px;
 }
 
 /*Merchandising page*/

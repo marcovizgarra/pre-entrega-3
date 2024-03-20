@@ -5,124 +5,113 @@
         font-weight: bold;
         text-align: center;
         margin-top: $margen-top;
+        letter-spacing: $h1-letter-spacing;
     }
-    .album-container-1 {
+    .album-container {
+        .cover-album {
+            width: 390px;
+            border: 1px solid white;
+        }
         .slipknot-album {
-            .album-details {
-                @include album-details;
-                @include flex-column-center;
-                a {
-                    @include album-details-a;
-                    }
-                }
-                p {
-                    @include album-details-p;
-                }
-                h2 {
-                    @include album-details-h2;
-                }
-                @include flex-row-center;
-                flex-wrap: nowrap;
-            }
-        img {
-            margin: 0 15px;
-            @include img-album-containers;
-        }
-        .spotify-playlist {
-            @include spotify-iframe;
-        }
-        @include album-container-1;
-        @include flex-column-center;
-    }
-    .album-container-2 {
-        .slipknot-album {
-            .album-details {
-                @include album-details;
-                @include flex-column-center;
-                a {
-                    @include album-details-a;
-                    }
-                }
-                p {
-                    @include album-details-p;
-                }
-                h2 {
-                    @include album-details-h2;
-                }
-                @include flex-row-center;
-                flex-wrap: nowrap;
-            }
-        img {
-            margin: 0 15px;
-            @include img-album-containers;
-        }
-        .spotify-playlist {
-            @include spotify-iframe;
-        }
-        @include album-container-2;
-        @include flex-column-center;
-    }
-    .album-container-3 {
-        .slipknot-album {
-            .spotify-playlist {
-                border-style: white 1px none;
-                width: auto;
-                height: auto;
-            }
             .carousel {
+                display: none;
                 .carousel-inner {
+                    width: 390px;
+                    height: 390px;
+                    img {
+                        width: 390px;
+                    }
                     .carousel-item{
-                        iframe {
-                            width: 100%;
-                            height: 352px;
-                        }
+                        width: 390px;
+                        height: 390px;
                     }
                     .carousel-details {
+                        display: flex !important;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                        align-content: center;
+                        flex-direction: column;
+                        justify-content: center;
+                        text-align: center;
                         background: radial-gradient(
-                            #680088a9,
-                            #000000de),
-                            url(../assets/img/album-cover/album-details-background-corey.jpg);
+                            #250030da,
+                            #000000ef),
+                            url(/assets/img/9-point-star.png);
                         background-size: cover;
                         width: 390px;
                         height: 390px;
-                        background-color: black;
-                        .carousel-caption {
-                            h5 {
-                                font-weight: lighter;
-                                text-transform: uppercase;
-                            }
-                            p {
-                                font-weight: lighter;
-                            }
+                        h5 {
+                            font-weight: lighter;
+                            text-transform: uppercase;
+                        }
+                        p {
+                            font-weight: lighter;
                         }
                     }
                 }
             }
-            .album-details {
-                @include album-details;
-                @include flex-column-center;
-                a {
-                    @include album-details-a;
-                    }
-                }
-                p {
-                    @include album-details-p;
-                }
-                h2 {
-                    @include album-details-h2;
-                }
-                @include flex-row-center;
-                flex-wrap: nowrap;
+            .carousel-control-prev {
+                top: auto;
+                padding-bottom: 9px;
             }
-        img {
-            margin: 0 15px;
-            @include img-album-containers;
+            .carousel-control-next {
+                top: auto;
+                padding-bottom: 9px;
+            }
         }
-        // .spotify-playlist {
-        //     @include spotify-iframe;
-        // }
-        @include album-container-3;
-        @include flex-column-center;
+        .album-details-1 {
+            background: radial-gradient(
+                #88000088,
+                #000000d0),
+                url(../assets/img/album-cover/album-details-background/slipknot-firs-album-details.jpg);
+            @include album-details-gral;
+        }
+        .album-details-2 {
+            background: radial-gradient(
+                #00028871,
+                #000000),
+                url(../assets/img/album-cover/album-details-background/slipknot-iowa-details.jpg);
+            @include album-details-gral;
+        } 
+        .album-details-3 {
+            background: radial-gradient(
+                #9900006c,
+                #250000),
+                url(../assets/img/album-cover/album-details-background/subliminal-verses-details.jpg);
+            @include album-details-gral;
+        } 
+        .album-details-4 {
+            background: radial-gradient(
+                #363300bb,
+                #250000),
+                url(../assets/img/album-cover/album-details-background/slipknot-all-hope-details.jpg);
+            @include album-details-gral;
+        }
+        .album-details-5 {
+            background: radial-gradient(
+                #141414d2,
+                #000000da),
+                url(../assets/img/album-cover/album-details-background/grey-chapter-details.jpg);
+            @include album-details-gral;
+        } 
+        .album-details-6 {
+            background: radial-gradient(
+                #4c0063b9,
+                #000000),
+                url(../assets/img/album-cover/album-details-background/we-are-not-yor-kind-details.jpg);
+            @include album-details-gral;
+        }
+        .album-details-7 {
+            background: radial-gradient(
+                #580000bd,
+                #000000),
+                url(../assets/img/album-cover/album-details-background/the-end-so-far-details.jpg);
+            @include album-details-gral;
+        }           
+        .spotify-playlist {
+            width: 35%;
+            height: 390px;
+        }
+        @include album-container;
     }
 }
-

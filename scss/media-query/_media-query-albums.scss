@@ -1,54 +1,70 @@
-@media only screen and (max-width: 1390px) {
+@media only screen and (max-width: 1259px) {
     .album-page {
-        .album-container-1 {
+        .album-container {
             .slipknot-album {
-                .spotify-playlist {
-                    width: 40vw;
-                    height: 152px;
+                .carousel {
+                    display: flex;
                 }
             }
-        }
-        .album-container-2 {
-            .slipknot-album {
-                .spotify-playlist {
-                    width: 40vw;
-                    height: 152px;
-                }
+            .details {
+                display: none;
+            }
+            .cover-album {
+                display: none;
             }
         }
-        .album-container-3 {
-            .slipknot-album {
-                .spotify-playlist {
-                    width: 40vw;
-                    height: 152px;
-                }
-            }
-        }
-    }       
+    }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 767px) {
     .album-page {
-        .album-container-1 {
+        .album-container {
             .slipknot-album {
-                .spotify-playlist {
-                    display: none;
+                .carousel {
+                    display: flex;
                 }
             }
-        }
-        .album-container-2 {
-            .slipknot-album {
-                .spotify-playlist {
-                    display: none;
-                }
+            .cover-album {
+                display: none;
+            }
+            .spotify-playlist {
+                display: none;
             }
         }
-        .album-container-3 {
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .album-page {
+        .album-container {
             .slipknot-album {
-                .spotify-playlist {
-                    display: none;
+                .carousel {
+                    .carousel-inner {
+                        width: 285px;
+                        height: 285px;
+                        img {
+                            width: 285px;
+                        }
+                        h5 {
+                            font-size: 22px;
+                            font-weight: lighter;
+                            text-transform: uppercase;
+                        }
+                        .carousel-item {
+                            width: 285px;
+                            height: 285px;
+                        }
+                        .carousel-details {
+                            width: 285px;
+                            height: 285px;
+                        }
+                        p {
+                            font-size: 20px;
+                            font-weight: lighter;
+                        }
+                    }
                 }
-            }
-        }
-    }       
+            }   
+        }               
+    }
 }

@@ -3,7 +3,7 @@
     h1 {
         font-size: $h1-font-size;
         text-transform: uppercase;
-        letter-spacing: 10px;
+        letter-spacing: $h1-letter-spacing;
     }
     .banner-remeras {
         background: radial-gradient(circle at 0% 50%,
