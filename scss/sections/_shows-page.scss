@@ -10,6 +10,9 @@
         letter-spacing: $h1-letter-spacing;
     }
     .show-container {
+        background-color: #000000c0;
+        padding: 20px;
+        border: 1px solid #4e4e4e;
         .show {
             .banner-evento {
                 width: 50vw;
@@ -51,6 +54,9 @@
         .entradas-container {
             width: 35vw;
             margin-left: 2.5vw;
+            .item-entrada {
+                margin-left: 20px;
+            }
             .min-precio {
                 text-align: center;
                 height: 5.5vw;
@@ -72,35 +78,69 @@
                     p {
                         width: 100px;
                         height: 100px;
-                        border: 1px solid white;
+                        border: 2px solid white;
                         text-transform: uppercase;
+                        font-weight: lighter;
                         border-radius: 4px;
                         padding: 10px;
-                        font-size: 25px;
+                        font-size: 20px;
+                        .dia {
+                            font-size: 37px;
+                            font-weight: bold;
+                        }
                     }
                 }
-                .horarios {
+                .horarios-1 {
                     p {
+                        line-height: 1.1;
                         width: 100px;
                         height: 100px;
-                        border: 1px solid white;
                         border-radius: 4px;
                         padding: 10px;
                         .titulo {
+                            letter-spacing: 2px;
                             text-transform: uppercase;
                             color: orange;
                             font-size: 15px;
                         }
                         .horario {
-                            font-size: 30px;
+                            font-size: 32px;
                         }
                         .subtitulo {
                             font-weight: lighter;
-                            font-size: 20px;
+                            font-size: 18px;
                         }
                     }
+                    @include flex-row-center;
+                }
+                .horarios-2 {
+                    p {
+                        line-height: 1.1;
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 4px;
+                        padding: 10px;
+                        .horario {
+                            font-size: 32px;
+                        }
+                        .subtitulo {
+                            font-weight: lighter;
+                            font-size: 18px;
+                        }
+                    }
+                    @include flex-row-center;
                 }
                 @include flex-row-center;
+            }
+            .btn-comprar-entrada {
+                color: white;
+                width: 130px;
+                height: 60px;
+                margin-left: 100px;
+                border-radius: 60px;
+                border: 2px solid white;
+                text-transform: uppercase;
+                background-color: rgb(128, 128, 128);
             }
         }
         @include flex-row-center;

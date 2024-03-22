@@ -834,6 +834,9 @@ body {
     margin-bottom: 30px;
     letter-spacing: 10px; }
   .main-shows .show-container {
+    background-color: #000000c0;
+    padding: 20px;
+    border: 1px solid #4e4e4e;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -879,6 +882,8 @@ body {
     .main-shows .show-container .entradas-container {
       width: 35vw;
       margin-left: 2.5vw; }
+      .main-shows .show-container .entradas-container .item-entrada {
+        margin-left: 20px; }
       .main-shows .show-container .entradas-container .min-precio {
         text-align: center;
         height: 5.5vw;
@@ -909,26 +914,67 @@ body {
         .main-shows .show-container .entradas-container .detalles-shows .fecha p {
           width: 100px;
           height: 100px;
-          border: 1px solid white;
+          border: 2px solid white;
           text-transform: uppercase;
+          font-weight: lighter;
           border-radius: 4px;
           padding: 10px;
-          font-size: 25px; }
-        .main-shows .show-container .entradas-container .detalles-shows .horarios p {
-          width: 100px;
-          height: 100px;
-          border: 1px solid white;
-          border-radius: 4px;
-          padding: 10px; }
-          .main-shows .show-container .entradas-container .detalles-shows .horarios p .titulo {
-            text-transform: uppercase;
-            color: orange;
-            font-size: 15px; }
-          .main-shows .show-container .entradas-container .detalles-shows .horarios p .horario {
-            font-size: 30px; }
-          .main-shows .show-container .entradas-container .detalles-shows .horarios p .subtitulo {
-            font-weight: lighter;
-            font-size: 20px; }
+          font-size: 20px; }
+          .main-shows .show-container .entradas-container .detalles-shows .fecha p .dia {
+            font-size: 37px;
+            font-weight: bold; }
+        .main-shows .show-container .entradas-container .detalles-shows .horarios-1 {
+          display: flex;
+          flex-wrap: wrap;
+          text-align: center;
+          align-items: center;
+          flex-direction: row;
+          align-content: center;
+          justify-content: center; }
+          .main-shows .show-container .entradas-container .detalles-shows .horarios-1 p {
+            line-height: 1.1;
+            width: 100px;
+            height: 100px;
+            border-radius: 4px;
+            padding: 10px; }
+            .main-shows .show-container .entradas-container .detalles-shows .horarios-1 p .titulo {
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              color: orange;
+              font-size: 15px; }
+            .main-shows .show-container .entradas-container .detalles-shows .horarios-1 p .horario {
+              font-size: 32px; }
+            .main-shows .show-container .entradas-container .detalles-shows .horarios-1 p .subtitulo {
+              font-weight: lighter;
+              font-size: 18px; }
+        .main-shows .show-container .entradas-container .detalles-shows .horarios-2 {
+          display: flex;
+          flex-wrap: wrap;
+          text-align: center;
+          align-items: center;
+          flex-direction: row;
+          align-content: center;
+          justify-content: center; }
+          .main-shows .show-container .entradas-container .detalles-shows .horarios-2 p {
+            line-height: 1.1;
+            width: 100px;
+            height: 100px;
+            border-radius: 4px;
+            padding: 10px; }
+            .main-shows .show-container .entradas-container .detalles-shows .horarios-2 p .horario {
+              font-size: 32px; }
+            .main-shows .show-container .entradas-container .detalles-shows .horarios-2 p .subtitulo {
+              font-weight: lighter;
+              font-size: 18px; }
+      .main-shows .show-container .entradas-container .btn-comprar-entrada {
+        color: white;
+        width: 130px;
+        height: 60px;
+        margin-left: 100px;
+        border-radius: 60px;
+        border: 2px solid white;
+        text-transform: uppercase;
+        background-color: gray; }
 
 .main-merch {
   margin-top: 30px;
