@@ -58,8 +58,8 @@
     .info-banda {
         width: 65vw;
         #logo-slipknot-info {
-            margin-top: $margen-top;
-            width: 400px;
+            margin-top: ($margen-top*2);
+            width: 20vw;
         }
         h1 {
             margin-top: ($margen-top*3);
@@ -68,14 +68,96 @@
         }
         .resumen-banda {
             text-align: justify;
+            font-size: 25px;
+            font-weight: lighter;
             background-image: linear-gradient( 
                 to left, 
                 rgba(0, 0, 0, 0.849),
                 rgba(0, 0, 0, 0.712)),
                 url(../assets/img/9-point-star-half.png);
             background-position: right;
-            background-size: 22vw;
+            background-size: 20vw;
             background-repeat: no-repeat;
+        }
+        #slipknot-resumen-carousel {
+            width: 100%;
+            height: 100%;
+            border: 1px solid white;
+            .carousel-inner {
+                .carousel-item {
+                    height: 85vh;
+                    padding: 0 10vw;
+                    text-align: justify !important;
+                    @include flex-column-center;
+                    p {
+                        font-size: 25px;
+                        font-weight: lighter;
+                    }
+                }
+                .slide-1 {
+                    background: radial-gradient(circle at 0% 50%,
+                        #4a005ccb,
+                        #000000cb,
+                        #7903038e),
+                        url(/assets/img/band-members-section/carousel-slide/band-slide.jpeg);
+                    background-size: cover;
+                    background-position: center;    
+                }
+                .slide-2 {
+                    background: radial-gradient(circle at 0% 50%,
+                        #4a005ccb,
+                        #000000cb,
+                        #7903038e),
+                        url(/assets/img/band-members-section/carousel-slide/carig-jones-slide.jpeg);
+                    background-size: cover;   
+                    background-position: center; 
+                }
+                .slide-3 {
+                    background: radial-gradient(circle at 0% 50%,
+                        #4a005ce0,
+                        #000000cb,
+                        #7903038e),
+                        url(/assets/img/band-members-section/carousel-slide/jay-weinberg-slide.jpeg);
+                    background-size: cover;
+                    background-position: center;    
+                }
+                .slide-4 {
+                    background: radial-gradient(circle at 0% 50%,
+                        #4a005ce0,
+                        #000000cb,
+                        #3e3f008e),
+                        url(/assets/img/band-members-section/carousel-slide/corey-taylor-slide.jpeg);
+                    background-size: cover;
+                    background-position: center;    
+                }
+                .slide-5 {
+                    background: radial-gradient(circle at 0% 50%,
+                        #4a005ce0,
+                        #000000cb,
+                        #7903038e),
+                        url(/assets/img/band-members-section/carousel-slide/mick-thomson-slide.jpeg);
+                    background-size: cover;
+                    background-position: center;    
+                }
+                .slide-6 {
+                    background: radial-gradient(circle at 0% 50%,
+                        #4a005ce0,
+                        #000000cb,
+                        #7903038e),
+                        url(/assets/img/band-members-section/carousel-slide/jim-root-slide.jpeg);
+                    background-size: cover;
+                    background-position: center;    
+                }
+                .slide-7 {
+                    background: radial-gradient(circle at 0% 50%,
+                        #2d0038e0,
+                        #000000cb,
+                        #5700008e),
+                        url(/assets/img/band-members-section/carousel-slide/sid-wilson-slide.jpeg);
+                    background-size: cover;
+                    background-position: center;    
+                }
+            }
         }
     }
 
@@ -103,6 +185,7 @@
         .container-integrantes {
             display: grid; 
             margin: 20px;
+            border: 1px solid white;
             grid-template-columns: repeat(6, auto); 
             grid-template-rows: repeat(5, auto);
             justify-content: center;
@@ -118,11 +201,33 @@
                 @include integrante-horizontal;
                 &:hover {
                     background: linear-gradient(
+                        
                         to bottom,
                         $gradient-resumen-1,
                         $gradient-resumen-2),
                         url(../assets/img/band-members-section/sid-wilson-resumen.jpg);
                     @include integrante-horizontal-hover;
+                }
+            }
+            .integrante {
+                transition: transform .2s;
+                &:hover {
+                    transform: scale(1.5);
+                    border: 1px solid $rojo-slipknot;
+                    box-shadow: 0px 0px 15px $rojo-slipknot;
+                }
+            }
+            .imagen-banda {
+                grid-area: imagen-banda;
+                background-image: url(/assets/img/band-members-section/imagen-banda-2023-byw.webp);
+                @include imagen-banda;
+                border: 1px solid white;
+                transition: transform .2s;
+                &:hover {
+                    transform: scale(1.4);
+                    background-image: url(/assets/img/band-members-section/imagen-banda-2023.jpeg);
+                    border: 1px solid $rojo-slipknot;
+                    box-shadow: 0px 0px 15px $rojo-slipknot;
                 }
             }
             .jay-weimberg {
@@ -163,11 +268,6 @@
                         url(../assets/img/band-members-section/michael-pfaff-resumen.jpg);
                     @include integrante-vertical-hover;
                 }
-            }
-            .imagen-banda {
-                grid-area: imagen-banda;
-                background-image: url(../assets/img/band-members-section/imagen-banda-2023.webp);
-                @include imagen-banda;
             }
             .jim-root {
                 grid-area: jim-root;

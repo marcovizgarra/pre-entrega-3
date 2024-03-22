@@ -37,12 +37,13 @@
 @media only screen and (max-width: 425px) {
     .faq-main {
         h1 {
-            font-size: ($h1-font-size/1.2);
+            font-size: $h1-font-size-425px;
         }
         .accordion {
             width: 100vw;
             .accordion-item {
                 h2 {
+                    font-weight: lighter;
                     font-size: 20px;
                 }
             }

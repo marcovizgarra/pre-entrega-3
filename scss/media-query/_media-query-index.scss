@@ -1,3 +1,11 @@
+@media only screen and (max-width: 1440px) {
+    .home-main-container {
+        .info-banda {
+            width: 85vw;
+        }
+    }
+}
+
 @media only screen and (max-width: 1390px) {
     .video-box {
         height: 67vh;
@@ -13,9 +21,26 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    .video-box {
-        .estrella-nueve-puntas {
-            width: 55vw;
+    .home-main-container {
+        .video-box {
+            .estrella-nueve-puntas {
+                width: 55vw;
+            }
+        }
+        .resumen-banda {
+            display: none;
+        }
+        .info-banda {
+            #slipknot-resumen-carousel {
+                display: flex;
+                .carousel-inner {
+                    .carousel-item {
+                        p {
+                            font-weight: lighter;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -45,6 +70,18 @@
             #logo-slipknot-info {
                 margin-top: ($margen-top*3);
                 width: 300px;
+            }
+        }
+        .info-banda {
+            #slipknot-resumen-carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        p {
+                            font-size: 19.5px;
+                            font-weight: lighter;
+                        }
+                    }
+                }
             }
         }
     }

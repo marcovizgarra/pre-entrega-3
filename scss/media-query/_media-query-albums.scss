@@ -34,6 +34,15 @@
     }
 }
 
+@media only screen and (max-width: 425px) {
+    .album-page {
+        h1 {
+            font-size: $h1-font-size-425px;
+        }
+    }
+}
+
+
 @media only screen and (max-width: 376px) {
     .album-page {
         .album-container {

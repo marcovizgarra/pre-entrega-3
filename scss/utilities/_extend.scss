@@ -41,6 +41,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background-position: center;
     background-size: cover;
     h3 {
         display: block;
@@ -81,6 +82,7 @@
     background-size: cover;
     flex-direction: column;
     justify-content: center;
+    background-position: center;
     h3 {
         display: block;
         text-transform: uppercase;
@@ -164,7 +166,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 54.36vh;
+    height: 50vh;
 }
 
 @mixin merch-banner-h2 {
@@ -172,4 +174,25 @@
     font-weight: lighter;
     font-size: ($h2-font-size*1.8);
     letter-spacing: 40px;
+}
+
+@mixin merch-banner-h2-1024px {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: ($h2-font-size*1.4);
+    letter-spacing: 40px;
+}
+
+@mixin merch-banner-h2-620px {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: ($h2-font-size*1.2);
+    letter-spacing: 30px;
+}
+
+@mixin merch-banner-h2-480px {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: ($h2-font-size);
+    letter-spacing: 15px;
 }
