@@ -196,31 +196,31 @@ body {
           font-size: 25px;
           font-weight: lighter; }
       .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-1 {
-        background: radial-gradient(circle at 0% 50%, #4a005ccb, #000000cb, #7903038e), url(/assets/img/band-members-section/carousel-slide/band-slide.jpeg);
+        background: radial-gradient(circle at 0% 50%, #4a005ccb, #000000cb, #7903038e), url(../assets/img/band-members-section/carousel-slide/band-slide.jpeg);
         background-size: cover;
         background-position: center; }
       .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-2 {
-        background: radial-gradient(circle at 0% 50%, #4a005ccb, #000000cb, #7903038e), url(/assets/img/band-members-section/carousel-slide/carig-jones-slide.jpeg);
+        background: radial-gradient(circle at 0% 50%, #4a005ccb, #000000cb, #7903038e), url(../assets/img/band-members-section/carousel-slide/carig-jones-slide.jpeg);
         background-size: cover;
         background-position: center; }
       .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-3 {
-        background: radial-gradient(circle at 0% 50%, #4a005ce0, #000000cb, #7903038e), url(/assets/img/band-members-section/carousel-slide/jay-weinberg-slide.jpeg);
+        background: radial-gradient(circle at 0% 50%, #4a005ce0, #000000cb, #7903038e), url(../assets/img/band-members-section/carousel-slide/jay-weinberg-slide.jpeg);
         background-size: cover;
         background-position: center; }
       .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-4 {
-        background: radial-gradient(circle at 0% 50%, #4a005ce0, #000000cb, #3e3f008e), url(/assets/img/band-members-section/carousel-slide/corey-taylor-slide.jpeg);
+        background: radial-gradient(circle at 0% 50%, #4a005ce0, #000000cb, #3e3f008e), url(../assets/img/band-members-section/carousel-slide/corey-taylor-slide.jpeg);
         background-size: cover;
         background-position: center; }
       .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-5 {
-        background: radial-gradient(circle at 0% 50%, #4a005ce0, #000000cb, #7903038e), url(/assets/img/band-members-section/carousel-slide/mick-thomson-slide.jpeg);
+        background: radial-gradient(circle at 0% 50%, #4a005ce0, #000000cb, #7903038e), url(../assets/img/band-members-section/carousel-slide/mick-thomson-slide.jpeg);
         background-size: cover;
         background-position: center; }
       .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-6 {
-        background: radial-gradient(circle at 0% 50%, #4a005ce0, #000000cb, #7903038e), url(/assets/img/band-members-section/carousel-slide/jim-root-slide.jpeg);
+        background: radial-gradient(circle at 0% 50%, #4a005ce0, #000000cb, #7903038e), url(../assets/img/band-members-section/carousel-slide/jim-root-slide.jpeg);
         background-size: cover;
         background-position: center; }
       .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-7 {
-        background: radial-gradient(circle at 0% 50%, #2d0038e0, #000000cb, #5700008e), url(/assets/img/band-members-section/carousel-slide/sid-wilson-slide.jpeg);
+        background: radial-gradient(circle at 0% 50%, #2d0038e0, #000000cb, #5700008e), url(../assets/img/band-members-section/carousel-slide/sid-wilson-slide.jpeg);
         background-size: cover;
         background-position: center; }
   .home-main-container .info-integrantes {
@@ -299,7 +299,7 @@ body {
           box-shadow: 0px 0px 15px #d22329; }
       .home-main-container .info-integrantes .container-integrantes .imagen-banda {
         grid-area: imagen-banda;
-        background-image: url(/assets/img/band-members-section/imagen-banda-2023-byw.webp);
+        background-image: url(../assets/img/band-members-section/imagen-banda-2023-byw.webp);
         width: 44.06vw;
         height: 60.44vh;
         display: flex;
@@ -316,7 +316,7 @@ body {
           display: none; }
         .home-main-container .info-integrantes .container-integrantes .imagen-banda:hover {
           transform: scale(1.4);
-          background-image: url(/assets/img/band-members-section/imagen-banda-2023.jpeg);
+          background-image: url(../assets/img/band-members-section/imagen-banda-2023.jpeg);
           border: 1px solid #d22329;
           box-shadow: 0px 0px 15px #d22329; }
       .home-main-container .info-integrantes .container-integrantes .jay-weimberg {
@@ -820,6 +820,7 @@ body {
 
 .main-shows {
   margin-top: 40px;
+  width: 100vw;
   display: flex;
   text-align: center;
   align-items: center;
@@ -833,18 +834,6 @@ body {
     margin-bottom: 30px;
     letter-spacing: 10px; }
   .main-shows .show-container {
-    padding-top: 20px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: red;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.836); }
-  .main-shows ul {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -852,57 +841,94 @@ body {
     flex-direction: row;
     align-content: center;
     justify-content: center; }
-    .main-shows ul li {
-      color: white;
-      font-weight: bold;
-      font-size: larger;
-      text-decoration: none;
-      list-style-type: none;
-      display: inline;
-      margin: 0 60px; }
-      .main-shows ul li a {
-        color: white;
-        font-weight: bold;
-        text-decoration: none;
-        list-style-type: none; }
-        .main-shows ul li a:hover {
-          color: red; }
-      .main-shows ul li img {
-        width: 20px;
-        margin-right: 10px; }
-  .main-shows .show-options {
-    margin: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
-    .main-shows .show-options h2 {
-      font-size: 32px; }
-      .main-shows .show-options h2:hover {
-        color: red; }
-    .main-shows .show-options .option-show {
-      width: 400px;
-      height: 255.2px;
+    .main-shows .show-container .show {
       display: flex;
-      margin-right: 15px;
+      text-align: center;
       align-items: center;
-      border: 1px solid red;
+      align-content: center;
       flex-direction: column;
-      justify-content: space-around;
-      background-color: rgba(0, 0, 0, 0.493); }
-      .main-shows .show-options .option-show a {
-        color: white;
-        text-decoration: none; }
-        .main-shows .show-options .option-show a:hover {
-          color: red; }
-      .main-shows .show-options .option-show p {
-        color: white;
-        text-align: center; }
-      .main-shows .show-options .option-show a img {
-        width: 20px;
-        margin-right: 10px; }
-      .main-shows .show-options .option-show img {
-        width: 398px;
-        height: auto; }
+      justify-content: center; }
+      .main-shows .show-container .show .banner-evento {
+        width: 50vw;
+        border: 1px solid white; }
+        .main-shows .show-container .show .banner-evento .australia-banner {
+          width: 100%; }
+      .main-shows .show-container .show .evento-banner-descripcion {
+        width: 50vw;
+        margin-top: 30px; }
+        .main-shows .show-container .show .evento-banner-descripcion h2 {
+          text-transform: uppercase;
+          background-color: black;
+          border: 1px solid white;
+          font-weight: lighter;
+          border-radius: 10px;
+          font-size: 22px;
+          padding: 5px; }
+        .main-shows .show-container .show .evento-banner-descripcion h3 {
+          margin-top: 30px;
+          text-transform: uppercase;
+          font-weight: lighter;
+          text-shadow: 0 0 10px #dd0000; }
+        .main-shows .show-container .show .evento-banner-descripcion h4 {
+          margin-top: 30px;
+          text-transform: uppercase; }
+        .main-shows .show-container .show .evento-banner-descripcion p {
+          font-weight: lighter;
+          text-align: justify;
+          font-size: 25px; }
+    .main-shows .show-container .entradas-container {
+      width: 35vw;
+      margin-left: 2.5vw; }
+      .main-shows .show-container .entradas-container .min-precio {
+        text-align: center;
+        height: 5.5vw;
+        background-color: #d22329;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center; }
+        .main-shows .show-container .entradas-container .min-precio h2 {
+          text-transform: uppercase;
+          font-weight: lighter; }
+          .main-shows .show-container .entradas-container .min-precio h2 .precio {
+            font-weight: bold;
+            font-size: 40px; }
+      .main-shows .show-container .entradas-container .detalles-shows {
+        background-color: #3f3f3f;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center; }
+        .main-shows .show-container .entradas-container .detalles-shows .fecha p {
+          width: 100px;
+          height: 100px;
+          border: 1px solid white;
+          text-transform: uppercase;
+          border-radius: 4px;
+          padding: 10px;
+          font-size: 25px; }
+        .main-shows .show-container .entradas-container .detalles-shows .horarios p {
+          width: 100px;
+          height: 100px;
+          border: 1px solid white;
+          border-radius: 4px;
+          padding: 10px; }
+          .main-shows .show-container .entradas-container .detalles-shows .horarios p .titulo {
+            text-transform: uppercase;
+            color: orange;
+            font-size: 15px; }
+          .main-shows .show-container .entradas-container .detalles-shows .horarios p .horario {
+            font-size: 30px; }
+          .main-shows .show-container .entradas-container .detalles-shows .horarios p .subtitulo {
+            font-weight: lighter;
+            font-size: 20px; }
 
 .main-merch {
   margin-top: 30px;

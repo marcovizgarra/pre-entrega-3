@@ -99,7 +99,7 @@
                         #4a005ccb,
                         #000000cb,
                         #7903038e),
-                        url(/assets/img/band-members-section/carousel-slide/band-slide.jpeg);
+                        url(../assets/img/band-members-section/carousel-slide/band-slide.jpeg);
                     background-size: cover;
                     background-position: center;    
                 }
@@ -108,7 +108,7 @@
                         #4a005ccb,
                         #000000cb,
                         #7903038e),
-                        url(/assets/img/band-members-section/carousel-slide/carig-jones-slide.jpeg);
+                        url(../assets/img/band-members-section/carousel-slide/carig-jones-slide.jpeg);
                     background-size: cover;   
                     background-position: center; 
                 }
@@ -117,7 +117,7 @@
                         #4a005ce0,
                         #000000cb,
                         #7903038e),
-                        url(/assets/img/band-members-section/carousel-slide/jay-weinberg-slide.jpeg);
+                        url(../assets/img/band-members-section/carousel-slide/jay-weinberg-slide.jpeg);
                     background-size: cover;
                     background-position: center;    
                 }
@@ -126,7 +126,7 @@
                         #4a005ce0,
                         #000000cb,
                         #3e3f008e),
-                        url(/assets/img/band-members-section/carousel-slide/corey-taylor-slide.jpeg);
+                        url(../assets/img/band-members-section/carousel-slide/corey-taylor-slide.jpeg);
                     background-size: cover;
                     background-position: center;    
                 }
@@ -135,7 +135,7 @@
                         #4a005ce0,
                         #000000cb,
                         #7903038e),
-                        url(/assets/img/band-members-section/carousel-slide/mick-thomson-slide.jpeg);
+                        url(../assets/img/band-members-section/carousel-slide/mick-thomson-slide.jpeg);
                     background-size: cover;
                     background-position: center;    
                 }
@@ -144,7 +144,7 @@
                         #4a005ce0,
                         #000000cb,
                         #7903038e),
-                        url(/assets/img/band-members-section/carousel-slide/jim-root-slide.jpeg);
+                        url(../assets/img/band-members-section/carousel-slide/jim-root-slide.jpeg);
                     background-size: cover;
                     background-position: center;    
                 }
@@ -153,7 +153,7 @@
                         #2d0038e0,
                         #000000cb,
                         #5700008e),
-                        url(/assets/img/band-members-section/carousel-slide/sid-wilson-slide.jpeg);
+                        url(../assets/img/band-members-section/carousel-slide/sid-wilson-slide.jpeg);
                     background-size: cover;
                     background-position: center;    
                 }
@@ -219,13 +219,13 @@
             }
             .imagen-banda {
                 grid-area: imagen-banda;
-                background-image: url(/assets/img/band-members-section/imagen-banda-2023-byw.webp);
+                background-image: url(../assets/img/band-members-section/imagen-banda-2023-byw.webp);
                 @include imagen-banda;
                 border: 1px solid white;
                 transition: transform .2s;
                 &:hover {
                     transform: scale(1.4);
-                    background-image: url(/assets/img/band-members-section/imagen-banda-2023.jpeg);
+                    background-image: url(../assets/img/band-members-section/imagen-banda-2023.jpeg);
                     border: 1px solid $rojo-slipknot;
                     box-shadow: 0px 0px 15px $rojo-slipknot;
                 }
