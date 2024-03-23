@@ -20,18 +20,23 @@
                 }
             }
         }
+        .shows-anteriores-poster {
+            img {
+                width: 25vw;
+            };
+        }
     }
 }
 
 @media only screen and (max-width: 1330px) {
     .main-shows {
         .show-container {
-            flex-direction: column-reverse;
+            flex-direction: column;
             width: 90vw;
             .show {
                 width: 100%;
                 .banner-evento {
-                    margin-top: $margen-top;
+                    margin: 0;
                     width: 100%;
                 }
                 .evento-banner-descripcion {
@@ -59,11 +64,22 @@
                 }
             }
         }
+        .shows-anteriores-poster {
+            img {
+                width: 40vw;
+            };
+        }
     }
 }
 
 @media only screen and (max-width: 768px) {
     .main-shows {
+        .proximos-shows-banner {
+            h1 {
+                font-size: 35px;
+                letter-spacing: 0;
+            }
+        }
         .show-container {
             .show {
                 .evento-banner-descripcion {
@@ -76,6 +92,21 @@
                 }
             }
         }
+        .shows-anteriores-banner {
+            height: 40vh;
+            margin: 25px;
+            border-top: 1px solid white;
+            h2 {
+                font-size: 35px;
+                letter-spacing: 0;
+            }
+        }
+        .shows-anteriores-poster {
+            img {
+                margin: 12px;
+                width: 40vw;
+            };
+        }
     }
 }
 
@@ -83,6 +114,8 @@
 @media only screen and (max-width: 681px) {
     .main-shows {
         .show-container {
+            width: 97%;
+            padding: 0;
             .entradas-container {
                 .container-fechas {
                     justify-content: center;

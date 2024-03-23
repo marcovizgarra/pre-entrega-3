@@ -1,23 +1,36 @@
 .main-shows {
     width: 99vw;
-    margin-top: 40px;
     @include flex-column-center;
-    h1 {
-        color: white;
-        font-weight: bold;
-        font-size: $h1-font-size;
-        margin-bottom: $margen-top;
-        letter-spacing: $h1-letter-spacing;
+    .proximos-shows-banner {
+        margin-top: ($margen-top*2);
+        margin-bottom: ($margen-top*2);
+        width: 99vw;
+        height: 60vh;
+        background: radial-gradient(circle at 0% 50%,
+            #58008b5d,
+            #00000042,
+            #00000093),
+            url(../assets/img/shows-img/banner-shows-h1.jpg);
+        background-size: cover;
+        background-position: center;
+        h1 {
+            margin-top: ($margen-top*3);
+            font-size: 55px;
+            letter-spacing: $h1-letter-spacing;
+            text-transform: uppercase;
+            font-weight: lighter;
+        }
     }
     .show-container {
         background-color: #000000c0;
         padding: 20px;
         border: 1px solid #4e4e4e;
+        margin-top: $margen-top;
         .show {
             .banner-evento {
                 width: 50vw;
                 border: 1px solid white;
-                .australia-banner {
+                .banner {
                     width: 100%;
                 }
             }
@@ -187,7 +200,7 @@
                         }
                     }
                 }
-                #flush-collapseOne {
+                .accordion-1 {
                     .accordion-body {
                         img {
                             width: 100%;
@@ -198,7 +211,15 @@
                         }
                     }
                 }
-                #flush-collapseThree {
+                .accordion-2 {
+                    .accordion-body {
+                        a {
+                            text-decoration: none;
+                            color: yellow;
+                        }
+                    }
+                }
+                .accordion-3 {
                     .accordion-body {
                         img {
                             width: 100%;
@@ -216,7 +237,6 @@
                             position:relative;
                             height:0;
                         }
-                        
                         .map-google iframe{
                             left:0;
                             top:0;
@@ -230,5 +250,35 @@
         }
         @include flex-row-center;
         align-items: flex-start;
+    }
+    .shows-anteriores-banner {
+        margin-top: ($margen-top*2);
+        margin-bottom: ($margen-top*2);
+        width: 99vw;
+        height: 60vh;
+        background: radial-gradient(circle at 0% 50%,
+            #898b0018,
+            #00000042,
+            #00000052),
+            url(/assets/img/shows-img/banner-shows-pasados.jpg);
+        background-size: cover;
+        background-position: center;
+        h2 {
+            margin-top: ($margen-top*3);
+            font-size: 55px;
+            letter-spacing: $h1-letter-spacing;
+            text-transform: uppercase;
+            font-weight: lighter;
+            text-shadow: 0 2px 15px red;
+        }
+    }
+    .shows-anteriores-poster {
+        img {
+            margin: 40px;
+            width: 21vw;
+            border: 1px solid red;
+            box-shadow: 0px 0px 15px $rojo-slipknot;
+        }
+        @include flex-row-center;
     }
 }

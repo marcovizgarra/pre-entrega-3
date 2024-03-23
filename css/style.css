@@ -173,7 +173,7 @@ body {
       margin-top: 60px;
       width: 99vw;
       height: 60vh;
-      background: radial-gradient(circle at 0% 50%, #58008b5d, #00000042, #00000093), url(/assets/img/band-members-section/posible-1.jpg);
+      background: radial-gradient(circle at 0% 50%, #58008b5d, #00000042, #00000093), url(../assets/img/band-members-section/banner-index-h1.jpg);
       background-size: cover;
       background-position: center; }
       .home-main-container .info-home-page-container #logo-slipknot-info h1 {
@@ -866,23 +866,31 @@ body {
 
 .main-shows {
   width: 99vw;
-  margin-top: 40px;
   display: flex;
   text-align: center;
   align-items: center;
   align-content: center;
   flex-direction: column;
   justify-content: center; }
-  .main-shows h1 {
-    color: white;
-    font-weight: bold;
-    font-size: 35px;
-    margin-bottom: 30px;
-    letter-spacing: 10px; }
+  .main-shows .proximos-shows-banner {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 99vw;
+    height: 60vh;
+    background: radial-gradient(circle at 0% 50%, #58008b5d, #00000042, #00000093), url(../assets/img/shows-img/banner-shows-h1.jpg);
+    background-size: cover;
+    background-position: center; }
+    .main-shows .proximos-shows-banner h1 {
+      margin-top: 90px;
+      font-size: 55px;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      font-weight: lighter; }
   .main-shows .show-container {
     background-color: #000000c0;
     padding: 20px;
     border: 1px solid #4e4e4e;
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -901,7 +909,7 @@ body {
       .main-shows .show-container .show .banner-evento {
         width: 50vw;
         border: 1px solid white; }
-        .main-shows .show-container .show .banner-evento .australia-banner {
+        .main-shows .show-container .show .banner-evento .banner {
           width: 100%; }
       .main-shows .show-container .show .evento-banner-descripcion {
         width: 50vw;
@@ -1056,29 +1064,60 @@ body {
           .main-shows .show-container .entradas-container .accordion .accordion-header button img {
             width: 30px;
             margin-right: 30px; }
-        .main-shows .show-container .entradas-container .accordion #flush-collapseOne .accordion-body img {
+        .main-shows .show-container .entradas-container .accordion .accordion-1 .accordion-body img {
           width: 100%; }
-        .main-shows .show-container .entradas-container .accordion #flush-collapseOne .accordion-body a {
+        .main-shows .show-container .entradas-container .accordion .accordion-1 .accordion-body a {
           text-decoration: none;
           color: white; }
-        .main-shows .show-container .entradas-container .accordion #flush-collapseThree .accordion-body img {
+        .main-shows .show-container .entradas-container .accordion .accordion-2 .accordion-body a {
+          text-decoration: none;
+          color: yellow; }
+        .main-shows .show-container .entradas-container .accordion .accordion-3 .accordion-body img {
           width: 100%; }
-        .main-shows .show-container .entradas-container .accordion #flush-collapseThree .accordion-body a {
+        .main-shows .show-container .entradas-container .accordion .accordion-3 .accordion-body a {
           text-decoration: none;
           color: white; }
-          .main-shows .show-container .entradas-container .accordion #flush-collapseThree .accordion-body a:hover {
+          .main-shows .show-container .entradas-container .accordion .accordion-3 .accordion-body a:hover {
             color: yellow; }
-        .main-shows .show-container .entradas-container .accordion #flush-collapseThree .accordion-body .map-google {
+        .main-shows .show-container .entradas-container .accordion .accordion-3 .accordion-body .map-google {
           overflow: hidden;
           padding-bottom: 56.25%;
           position: relative;
           height: 0; }
-        .main-shows .show-container .entradas-container .accordion #flush-collapseThree .accordion-body .map-google iframe {
+        .main-shows .show-container .entradas-container .accordion .accordion-3 .accordion-body .map-google iframe {
           left: 0;
           top: 0;
           height: 100%;
           width: 100%;
           position: absolute; }
+  .main-shows .shows-anteriores-banner {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 99vw;
+    height: 60vh;
+    background: radial-gradient(circle at 0% 50%, #898b0018, #00000042, #00000052), url(/assets/img/shows-img/banner-shows-pasados.jpg);
+    background-size: cover;
+    background-position: center; }
+    .main-shows .shows-anteriores-banner h2 {
+      margin-top: 90px;
+      font-size: 55px;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      font-weight: lighter;
+      text-shadow: 0 2px 15px red; }
+  .main-shows .shows-anteriores-poster {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center; }
+    .main-shows .shows-anteriores-poster img {
+      margin: 40px;
+      width: 21vw;
+      border: 1px solid red;
+      box-shadow: 0px 0px 15px #d22329; }
 
 .main-merch {
   margin-top: 30px;
@@ -1290,7 +1329,10 @@ body {
 
 @media only screen and (max-width: 768px) {
   .video-box .estrella-nueve-puntas {
-    width: 60vw; } }
+    width: 60vw; }
+  .home-main-container .info-home-page-container #logo-slipknot-info h1 {
+    font-size: 35px;
+    letter-spacing: 0; } }
 
 @media only screen and (max-width: 550px) {
   .video-box {
@@ -1324,16 +1366,18 @@ body {
 
 @media only screen and (max-width: 1599px) {
   .main-shows .show-container .entradas-container .btn-comprar-entrada {
-    margin: 0; } }
+    margin: 0; }
+  .main-shows .shows-anteriores-poster img {
+    width: 25vw; } }
 
 @media only screen and (max-width: 1330px) {
   .main-shows .show-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 90vw; }
     .main-shows .show-container .show {
       width: 100%; }
       .main-shows .show-container .show .banner-evento {
-        margin-top: 30px;
+        margin: 0;
         width: 100%; }
       .main-shows .show-container .show .evento-banner-descripcion {
         width: 100%; }
@@ -1347,23 +1391,41 @@ body {
         .main-shows .show-container .entradas-container .container-fechas .detalles-shows .item-entrada:not(:first-child) {
           margin-left: 30px; }
         .main-shows .show-container .entradas-container .container-fechas .detalles-shows .btn-comprar-entrada {
-          margin-right: 40px; } }
+          margin-right: 40px; }
+  .main-shows .shows-anteriores-poster img {
+    width: 40vw; } }
 
 @media only screen and (max-width: 768px) {
+  .main-shows .proximos-shows-banner h1 {
+    font-size: 35px;
+    letter-spacing: 0; }
   .main-shows .show-container .show .evento-banner-descripcion h3 {
     display: none; }
   .main-shows .show-container .show .evento-banner-descripcion p {
-    display: none; } }
+    display: none; }
+  .main-shows .shows-anteriores-banner {
+    height: 40vh;
+    margin: 25px;
+    border-top: 1px solid white; }
+    .main-shows .shows-anteriores-banner h2 {
+      font-size: 35px;
+      letter-spacing: 0; }
+  .main-shows .shows-anteriores-poster img {
+    margin: 12px;
+    width: 40vw; } }
 
 @media only screen and (max-width: 681px) {
-  .main-shows .show-container .entradas-container .container-fechas {
-    justify-content: center; }
-    .main-shows .show-container .entradas-container .container-fechas .detalles-shows {
-      margin: 0; }
-      .main-shows .show-container .entradas-container .container-fechas .detalles-shows .item-entrada {
+  .main-shows .show-container {
+    width: 97%;
+    padding: 0; }
+    .main-shows .show-container .entradas-container .container-fechas {
+      justify-content: center; }
+      .main-shows .show-container .entradas-container .container-fechas .detalles-shows {
         margin: 0; }
-      .main-shows .show-container .entradas-container .container-fechas .detalles-shows .btn-comprar-entrada {
-        margin: 0; } }
+        .main-shows .show-container .entradas-container .container-fechas .detalles-shows .item-entrada {
+          margin: 0; }
+        .main-shows .show-container .entradas-container .container-fechas .detalles-shows .btn-comprar-entrada {
+          margin: 0; } }
 
 @media only screen and (max-width: 624px) {
   .main-shows .show-container .entradas-container .container-fechas .btn-comprar-entrada {

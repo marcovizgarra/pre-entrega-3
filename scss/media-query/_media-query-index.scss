@@ -55,6 +55,16 @@
             width: 60vw;
         }
     }
+    .home-main-container {
+        .info-home-page-container {
+            #logo-slipknot-info {
+                h1 {
+                    font-size: 35px;
+                    letter-spacing: 0;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 550px) {
