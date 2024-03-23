@@ -52,6 +52,7 @@
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
 .footer-container {
+  width: 100%;
   height: max-content;
   margin-top: 30px;
   padding: 10px;
@@ -161,68 +162,82 @@ body {
         width: 300px;
         opacity: 1;
         filter: contrast(120%); }
-  .home-main-container .info-banda {
-    width: 65vw; }
-    .home-main-container .info-banda #logo-slipknot-info {
+  .home-main-container .info-home-page-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center; }
+    .home-main-container .info-home-page-container #logo-slipknot-info {
       margin-top: 60px;
-      width: 20vw; }
-    .home-main-container .info-banda h1 {
+      width: 99vw;
+      height: 60vh;
+      background: radial-gradient(circle at 0% 50%, #58008b5d, #00000042, #00000093), url(/assets/img/band-members-section/posible-1.jpg);
+      background-size: cover;
+      background-position: center; }
+      .home-main-container .info-home-page-container #logo-slipknot-info h1 {
+        margin-top: 90px;
+        font-size: 55px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        font-weight: lighter; }
+    .home-main-container .info-home-page-container .info-banda {
       margin-top: 90px;
-      font-size: 35px;
-      text-transform: uppercase; }
-    .home-main-container .info-banda .resumen-banda {
-      text-align: justify;
-      font-size: 25px;
-      font-weight: lighter;
-      background-image: linear-gradient(to left, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.712)), url(../assets/img/9-point-star-half.png);
-      background-position: right;
-      background-size: 20vw;
-      background-repeat: no-repeat; }
-    .home-main-container .info-banda #slipknot-resumen-carousel {
-      width: 100%;
-      height: 100%;
-      border: 1px solid white; }
-      .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .carousel-item {
-        height: 85vh;
-        padding: 0 10vw;
-        text-align: justify !important;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-        flex-direction: column;
-        justify-content: center; }
-        .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .carousel-item p {
-          font-size: 25px;
-          font-weight: lighter; }
-      .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-1 {
-        background: radial-gradient(circle at 0% 50%, #4a005ccb, #000000cb, #7903038e), url(../assets/img/band-members-section/carousel-slide/band-slide.jpeg);
-        background-size: cover;
-        background-position: center; }
-      .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-2 {
-        background: radial-gradient(circle at 0% 50%, #4a005ccb, #000000cb, #7903038e), url(../assets/img/band-members-section/carousel-slide/carig-jones-slide.jpeg);
-        background-size: cover;
-        background-position: center; }
-      .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-3 {
-        background: radial-gradient(circle at 0% 50%, #4a005ce0, #000000cb, #7903038e), url(../assets/img/band-members-section/carousel-slide/jay-weinberg-slide.jpeg);
-        background-size: cover;
-        background-position: center; }
-      .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-4 {
-        background: radial-gradient(circle at 0% 50%, #4a005ce0, #000000cb, #3e3f008e), url(../assets/img/band-members-section/carousel-slide/corey-taylor-slide.jpeg);
-        background-size: cover;
-        background-position: center; }
-      .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-5 {
-        background: radial-gradient(circle at 0% 50%, #4a005ce0, #000000cb, #7903038e), url(../assets/img/band-members-section/carousel-slide/mick-thomson-slide.jpeg);
-        background-size: cover;
-        background-position: center; }
-      .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-6 {
-        background: radial-gradient(circle at 0% 50%, #4a005ce0, #000000cb, #7903038e), url(../assets/img/band-members-section/carousel-slide/jim-root-slide.jpeg);
-        background-size: cover;
-        background-position: center; }
-      .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-7 {
-        background: radial-gradient(circle at 0% 50%, #2d0038e0, #000000cb, #5700008e), url(../assets/img/band-members-section/carousel-slide/sid-wilson-slide.jpeg);
-        background-size: cover;
-        background-position: center; }
+      width: 65vw; }
+      .home-main-container .info-home-page-container .info-banda .resumen-banda {
+        text-align: justify;
+        font-size: 25px;
+        font-weight: lighter;
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.712)), url(../assets/img/9-point-star-half.png);
+        background-position: right;
+        background-size: 20vw;
+        background-repeat: no-repeat; }
+      .home-main-container .info-home-page-container .info-banda #slipknot-resumen-carousel {
+        width: 100%;
+        height: 100%;
+        border: 1px solid white; }
+        .home-main-container .info-home-page-container .info-banda #slipknot-resumen-carousel .carousel-inner .carousel-item {
+          height: 85vh;
+          padding: 0 10vw;
+          text-align: justify !important;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          align-content: center;
+          flex-direction: column;
+          justify-content: center; }
+          .home-main-container .info-home-page-container .info-banda #slipknot-resumen-carousel .carousel-inner .carousel-item p {
+            font-size: 25px;
+            font-weight: lighter; }
+        .home-main-container .info-home-page-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-1 {
+          background: radial-gradient(circle at 0% 50%, #4a005ccb, #000000cb, #7903038e), url(../assets/img/band-members-section/carousel-slide/band-slide.jpeg);
+          background-size: cover;
+          background-position: center; }
+        .home-main-container .info-home-page-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-2 {
+          background: radial-gradient(circle at 0% 50%, #4a005ccb, #000000cb, #7903038e), url(../assets/img/band-members-section/carousel-slide/carig-jones-slide.jpeg);
+          background-size: cover;
+          background-position: center; }
+        .home-main-container .info-home-page-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-3 {
+          background: radial-gradient(circle at 0% 50%, #4a005ce0, #000000cb, #7903038e), url(../assets/img/band-members-section/carousel-slide/jay-weinberg-slide.jpeg);
+          background-size: cover;
+          background-position: center; }
+        .home-main-container .info-home-page-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-4 {
+          background: radial-gradient(circle at 0% 50%, #4a005ce0, #000000cb, #3e3f008e), url(../assets/img/band-members-section/carousel-slide/corey-taylor-slide.jpeg);
+          background-size: cover;
+          background-position: center; }
+        .home-main-container .info-home-page-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-5 {
+          background: radial-gradient(circle at 0% 50%, #4a005ce0, #000000cb, #7903038e), url(../assets/img/band-members-section/carousel-slide/mick-thomson-slide.jpeg);
+          background-size: cover;
+          background-position: center; }
+        .home-main-container .info-home-page-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-6 {
+          background: radial-gradient(circle at 0% 50%, #4a005ce0, #000000cb, #7903038e), url(../assets/img/band-members-section/carousel-slide/jim-root-slide.jpeg);
+          background-size: cover;
+          background-position: center; }
+        .home-main-container .info-home-page-container .info-banda #slipknot-resumen-carousel .carousel-inner .slide-7 {
+          background: radial-gradient(circle at 0% 50%, #2d0038e0, #000000cb, #5700008e), url(../assets/img/band-members-section/carousel-slide/sid-wilson-slide.jpeg);
+          background-size: cover;
+          background-position: center; }
   .home-main-container .info-integrantes {
     margin-bottom: 240px;
     display: flex;
@@ -286,6 +301,7 @@ body {
             font-size: 25px; }
           .home-main-container .info-integrantes .container-integrantes .sid-wilson:hover p {
             text-transform: uppercase;
+            font-weight: lighter;
             display: block;
             letter-spacing: 2px;
             font-size: 25px; }
@@ -348,6 +364,7 @@ body {
             font-size: 25px; }
           .home-main-container .info-integrantes .container-integrantes .jay-weimberg:hover p {
             text-transform: uppercase;
+            font-weight: lighter;
             display: block;
             letter-spacing: 2px;
             font-size: 25px; }
@@ -382,6 +399,7 @@ body {
             font-size: 25px; }
           .home-main-container .info-integrantes .container-integrantes .alessandro-venturella:hover p {
             text-transform: uppercase;
+            font-weight: lighter;
             display: block;
             letter-spacing: 2px;
             font-size: 25px; }
@@ -409,6 +427,7 @@ body {
           background-size: cover;
           flex-direction: column;
           justify-content: center;
+          font-weight: lighter;
           background-position: center; }
           .home-main-container .info-integrantes .container-integrantes .michael-pfaff:hover h3 {
             display: block;
@@ -443,6 +462,7 @@ body {
           background-size: cover;
           flex-direction: column;
           justify-content: center;
+          font-weight: lighter;
           background-position: center; }
           .home-main-container .info-integrantes .container-integrantes .jim-root:hover h3 {
             display: block;
@@ -477,6 +497,7 @@ body {
           background-size: cover;
           flex-direction: column;
           justify-content: center;
+          font-weight: lighter;
           background-position: center; }
           .home-main-container .info-integrantes .container-integrantes .craig-jones:hover h3 {
             display: block;
@@ -518,6 +539,7 @@ body {
             font-size: 25px; }
           .home-main-container .info-integrantes .container-integrantes .shawn-crahan:hover p {
             text-transform: uppercase;
+            font-weight: lighter;
             display: block;
             letter-spacing: 2px;
             font-size: 25px; }
@@ -552,6 +574,7 @@ body {
             font-size: 25px; }
           .home-main-container .info-integrantes .container-integrantes .mick-thomson:hover p {
             text-transform: uppercase;
+            font-weight: lighter;
             display: block;
             letter-spacing: 2px;
             font-size: 25px; }
@@ -579,6 +602,7 @@ body {
           background-size: cover;
           flex-direction: column;
           justify-content: center;
+          font-weight: lighter;
           background-position: center; }
           .home-main-container .info-integrantes .container-integrantes .corey-taylor:hover h3 {
             display: block;
@@ -617,6 +641,14 @@ body {
     --bs-accordion-btn-focus-box-shadow: none;
     --bs-accordion-active-bg: #d22329;
     --bs-accordion-active-color: white; }
+    .faq-main .accordion .accordion-button.collapsed::after {
+      background: url("../assets/img/show-icons/square-caret-down-solid.svg");
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .faq-main .accordion .accordion-button:not(.collapsed)::after {
+      background: url("../assets/img/show-icons/square-caret-down-solid.svg");
+      background-size: contain;
+      background-repeat: no-repeat; }
     .faq-main .accordion button {
       text-transform: uppercase;
       font-weight: 1vw;
@@ -640,6 +672,24 @@ body {
   margin-top: 30px;
   letter-spacing: 10px; }
 
+.album-page .background-fila-1 {
+  background: linear-gradient(to right, #0000004b, #000000bb), url(/assets/img/album-cover/fila-1-columna-1.jpg);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat; }
+
+.album-page .background-fila-2 {
+  background: linear-gradient(to right, #0000004b, #000000bb), url(/assets/img/album-cover/fila-2-columna-1.jpg);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat; }
+
+.album-page .background-fila-3 {
+  background: linear-gradient(to right, #0000004b, #000000bb), url(/assets/img/album-cover/fila-3-columna-1.jpg);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat; }
+
 .album-page .album-container {
   height: 50vh;
   display: flex;
@@ -647,11 +697,7 @@ body {
   align-items: center;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-bottom: 1.5vh;
-  background: url(../assets/img/album-cover/fila-3-columna-1.jpg);
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat; }
+  margin-bottom: 1.5vh; }
   .album-page .album-container .cover-album {
     width: 390px;
     border: 1px solid white; }
@@ -689,7 +735,7 @@ body {
     top: auto;
     padding-bottom: 9px; }
   .album-page .album-container .album-details-1 {
-    background: radial-gradient(#88000088, #000000d0), url(../assets/img/album-cover/album-details-background/slipknot-firs-album-details.jpg);
+    background: radial-gradient(#36000088, #000000d0), url(../assets/img/album-cover/album-details-background/slipknot-firs-album-details.jpg);
     border: 1px solid white;
     width: 390px;
     height: 390px;
@@ -725,7 +771,7 @@ body {
     .album-page .album-container .album-details-2 p {
       font-weight: lighter; }
   .album-page .album-container .album-details-3 {
-    background: radial-gradient(#9900006c, #250000), url(../assets/img/album-cover/album-details-background/subliminal-verses-details.jpg);
+    background: radial-gradient(#36000088, #000000d0), url(../assets/img/album-cover/album-details-background/subliminal-verses-details.jpg);
     border: 1px solid white;
     width: 390px;
     height: 390px;
@@ -743,7 +789,7 @@ body {
     .album-page .album-container .album-details-3 p {
       font-weight: lighter; }
   .album-page .album-container .album-details-4 {
-    background: radial-gradient(#363300bb, #250000), url(../assets/img/album-cover/album-details-background/slipknot-all-hope-details.jpg);
+    background: radial-gradient(#36000088, #000000d0), url(../assets/img/album-cover/album-details-background/slipknot-all-hope-details.jpg);
     border: 1px solid white;
     width: 390px;
     height: 390px;
@@ -779,7 +825,7 @@ body {
     .album-page .album-container .album-details-5 p {
       font-weight: lighter; }
   .album-page .album-container .album-details-6 {
-    background: radial-gradient(#4c0063b9, #000000), url(../assets/img/album-cover/album-details-background/we-are-not-yor-kind-details.jpg);
+    background: radial-gradient(#390449b9, #000000), url(../assets/img/album-cover/album-details-background/we-are-not-yor-kind-details.jpg);
     border: 1px solid white;
     width: 390px;
     height: 390px;
@@ -797,7 +843,7 @@ body {
     .album-page .album-container .album-details-6 p {
       font-weight: lighter; }
   .album-page .album-container .album-details-7 {
-    background: radial-gradient(#580000bd, #000000), url(../assets/img/album-cover/album-details-background/the-end-so-far-details.jpg);
+    background: radial-gradient(#421212d0, #000000), url(../assets/img/album-cover/album-details-background/the-end-so-far-details.jpg);
     border: 1px solid white;
     width: 390px;
     height: 390px;
@@ -819,8 +865,8 @@ body {
     height: 390px; }
 
 .main-shows {
+  width: 99vw;
   margin-top: 40px;
-  width: 100vw;
   display: flex;
   text-align: center;
   align-items: center;
@@ -843,7 +889,8 @@ body {
     align-items: center;
     flex-direction: row;
     align-content: center;
-    justify-content: center; }
+    justify-content: center;
+    align-items: flex-start; }
     .main-shows .show-container .show {
       display: flex;
       text-align: center;
@@ -861,12 +908,11 @@ body {
         margin-top: 30px; }
         .main-shows .show-container .show .evento-banner-descripcion h2 {
           text-transform: uppercase;
-          background-color: black;
+          background-color: #d22329;
           border: 1px solid white;
-          font-weight: lighter;
-          border-radius: 10px;
-          font-size: 22px;
-          padding: 5px; }
+          font-size: 24px;
+          padding: 5px;
+          letter-spacing: 10px; }
         .main-shows .show-container .show .evento-banner-descripcion h3 {
           margin-top: 30px;
           text-transform: uppercase;
@@ -882,26 +928,21 @@ body {
     .main-shows .show-container .entradas-container {
       width: 35vw;
       margin-left: 2.5vw; }
-      .main-shows .show-container .entradas-container .item-entrada {
-        margin-left: 20px; }
       .main-shows .show-container .entradas-container .min-precio {
-        text-align: center;
-        height: 5.5vw;
-        background-color: #d22329;
+        height: max-content;
         display: flex;
-        flex-wrap: wrap;
         text-align: center;
         align-items: center;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center; }
+        justify-content: space-around;
+        background-color: #d22329; }
         .main-shows .show-container .entradas-container .min-precio h2 {
+          margin: 0;
           text-transform: uppercase;
           font-weight: lighter; }
-          .main-shows .show-container .entradas-container .min-precio h2 .precio {
-            font-weight: bold;
-            font-size: 40px; }
-      .main-shows .show-container .entradas-container .detalles-shows {
+        .main-shows .show-container .entradas-container .min-precio .precio {
+          font-weight: bold;
+          font-size: 50px; }
+      .main-shows .show-container .entradas-container .container-fechas {
         background-color: #3f3f3f;
         padding: 15px;
         display: flex;
@@ -910,71 +951,134 @@ body {
         align-items: center;
         flex-direction: row;
         align-content: center;
-        justify-content: center; }
-        .main-shows .show-container .entradas-container .detalles-shows .fecha p {
-          width: 100px;
-          height: 100px;
+        justify-content: center;
+        justify-content: space-between; }
+        .main-shows .show-container .entradas-container .container-fechas .detalles-shows {
+          display: flex;
+          flex-wrap: wrap;
+          text-align: center;
+          align-items: center;
+          flex-direction: row;
+          align-content: center;
+          justify-content: center; }
+          .main-shows .show-container .entradas-container .container-fechas .detalles-shows .fecha p {
+            width: 100px;
+            height: 100px;
+            border: 2px solid white;
+            text-transform: uppercase;
+            font-weight: lighter;
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 20px; }
+            .main-shows .show-container .entradas-container .container-fechas .detalles-shows .fecha p .dia {
+              font-size: 37px;
+              font-weight: bold; }
+          .main-shows .show-container .entradas-container .container-fechas .detalles-shows .horarios-1 {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            align-items: center;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center; }
+            .main-shows .show-container .entradas-container .container-fechas .detalles-shows .horarios-1 p {
+              line-height: 1.1;
+              width: 100px;
+              height: 100px;
+              border-radius: 4px;
+              padding: 10px; }
+              .main-shows .show-container .entradas-container .container-fechas .detalles-shows .horarios-1 p .titulo {
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: orange;
+                font-size: 15px; }
+              .main-shows .show-container .entradas-container .container-fechas .detalles-shows .horarios-1 p .horario {
+                font-size: 32px; }
+              .main-shows .show-container .entradas-container .container-fechas .detalles-shows .horarios-1 p .subtitulo {
+                font-weight: lighter;
+                font-size: 18px; }
+          .main-shows .show-container .entradas-container .container-fechas .detalles-shows .horarios-2 {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            align-items: center;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center; }
+            .main-shows .show-container .entradas-container .container-fechas .detalles-shows .horarios-2 p {
+              line-height: 1.1;
+              width: 100px;
+              height: 100px;
+              border-radius: 4px;
+              padding: 10px; }
+              .main-shows .show-container .entradas-container .container-fechas .detalles-shows .horarios-2 p .horario {
+                font-size: 32px; }
+              .main-shows .show-container .entradas-container .container-fechas .detalles-shows .horarios-2 p .subtitulo {
+                font-weight: lighter;
+                font-size: 18px; }
+        .main-shows .show-container .entradas-container .container-fechas .btn-comprar-entrada {
+          color: white;
+          width: 130px;
+          height: 60px;
+          border-radius: 60px;
           border: 2px solid white;
           text-transform: uppercase;
-          font-weight: lighter;
-          border-radius: 4px;
-          padding: 10px;
-          font-size: 20px; }
-          .main-shows .show-container .entradas-container .detalles-shows .fecha p .dia {
-            font-size: 37px;
-            font-weight: bold; }
-        .main-shows .show-container .entradas-container .detalles-shows .horarios-1 {
-          display: flex;
-          flex-wrap: wrap;
-          text-align: center;
-          align-items: center;
-          flex-direction: row;
-          align-content: center;
-          justify-content: center; }
-          .main-shows .show-container .entradas-container .detalles-shows .horarios-1 p {
-            line-height: 1.1;
-            width: 100px;
-            height: 100px;
-            border-radius: 4px;
-            padding: 10px; }
-            .main-shows .show-container .entradas-container .detalles-shows .horarios-1 p .titulo {
-              letter-spacing: 2px;
-              text-transform: uppercase;
-              color: orange;
-              font-size: 15px; }
-            .main-shows .show-container .entradas-container .detalles-shows .horarios-1 p .horario {
-              font-size: 32px; }
-            .main-shows .show-container .entradas-container .detalles-shows .horarios-1 p .subtitulo {
-              font-weight: lighter;
-              font-size: 18px; }
-        .main-shows .show-container .entradas-container .detalles-shows .horarios-2 {
-          display: flex;
-          flex-wrap: wrap;
-          text-align: center;
-          align-items: center;
-          flex-direction: row;
-          align-content: center;
-          justify-content: center; }
-          .main-shows .show-container .entradas-container .detalles-shows .horarios-2 p {
-            line-height: 1.1;
-            width: 100px;
-            height: 100px;
-            border-radius: 4px;
-            padding: 10px; }
-            .main-shows .show-container .entradas-container .detalles-shows .horarios-2 p .horario {
-              font-size: 32px; }
-            .main-shows .show-container .entradas-container .detalles-shows .horarios-2 p .subtitulo {
-              font-weight: lighter;
-              font-size: 18px; }
-      .main-shows .show-container .entradas-container .btn-comprar-entrada {
-        color: white;
-        width: 130px;
-        height: 60px;
-        margin-left: 100px;
-        border-radius: 60px;
-        border: 2px solid white;
+          background-color: gray; }
+          .main-shows .show-container .entradas-container .container-fechas .btn-comprar-entrada:hover {
+            background-color: black;
+            border: 2px solid red; }
+      .main-shows .show-container .entradas-container .accordion {
+        width: 100%;
         text-transform: uppercase;
-        background-color: gray; }
+        --bs-accordion-bg:  #3f3f3f;
+        --bs-accordion-color: white;
+        --bs-accordion-btn-color: white;
+        --bs-accordion-border-radius: 0px;
+        --bs-accordion-active-bg: #d22329;
+        --bs-accordion-active-color: white;
+        --bs-accordion-inner-border-radius: 0px;
+        --bs-accordion-border-color: #d2232900;
+        --bs-accordion-btn-focus-box-shadow: none; }
+        .main-shows .show-container .entradas-container .accordion .accordion-button.collapsed::after {
+          background: url("../assets/img/show-icons/square-caret-down-solid.svg");
+          background-size: contain;
+          background-repeat: no-repeat; }
+        .main-shows .show-container .entradas-container .accordion .accordion-button:not(.collapsed)::after {
+          background: url("../assets/img/show-icons/square-caret-down-solid.svg");
+          background-size: contain;
+          background-repeat: no-repeat; }
+        .main-shows .show-container .entradas-container .accordion .accordion-item {
+          border-top: 1px solid red; }
+        .main-shows .show-container .entradas-container .accordion .accordion-header button {
+          text-transform: uppercase;
+          font-weight: 1vw;
+          letter-spacing: 5px; }
+          .main-shows .show-container .entradas-container .accordion .accordion-header button img {
+            width: 30px;
+            margin-right: 30px; }
+        .main-shows .show-container .entradas-container .accordion #flush-collapseOne .accordion-body img {
+          width: 100%; }
+        .main-shows .show-container .entradas-container .accordion #flush-collapseOne .accordion-body a {
+          text-decoration: none;
+          color: white; }
+        .main-shows .show-container .entradas-container .accordion #flush-collapseThree .accordion-body img {
+          width: 100%; }
+        .main-shows .show-container .entradas-container .accordion #flush-collapseThree .accordion-body a {
+          text-decoration: none;
+          color: white; }
+          .main-shows .show-container .entradas-container .accordion #flush-collapseThree .accordion-body a:hover {
+            color: yellow; }
+        .main-shows .show-container .entradas-container .accordion #flush-collapseThree .accordion-body .map-google {
+          overflow: hidden;
+          padding-bottom: 56.25%;
+          position: relative;
+          height: 0; }
+        .main-shows .show-container .entradas-container .accordion #flush-collapseThree .accordion-body .map-google iframe {
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          position: absolute; }
 
 .main-merch {
   margin-top: 30px;
@@ -1163,7 +1267,7 @@ body {
     width: 190px; } }
 
 @media only screen and (max-width: 1440px) {
-  .home-main-container .info-banda {
+  .home-main-container .info-home-page-container .info-banda {
     width: 85vw; } }
 
 @media only screen and (max-width: 1390px) {
@@ -1179,9 +1283,9 @@ body {
     width: 55vw; }
   .home-main-container .resumen-banda {
     display: none; }
-  .home-main-container .info-banda #slipknot-resumen-carousel {
+  .home-main-container .info-home-page-container .info-banda #slipknot-resumen-carousel {
     display: flex; }
-    .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .carousel-item p {
+    .home-main-container .info-home-page-container .info-banda #slipknot-resumen-carousel .carousel-inner .carousel-item p {
       font-weight: lighter; } }
 
 @media only screen and (max-width: 768px) {
@@ -1195,15 +1299,15 @@ body {
     width: 100vw; }
     .home-main-container .miembros-slipknot img:hover {
       width: 150px; }
-  .home-main-container .info-banda #logo-slipknot-info {
+  .home-main-container .info-home-page-container .info-banda #logo-slipknot-info {
     margin-top: 90px;
     width: 300px; }
-  .home-main-container .info-banda #slipknot-resumen-carousel .carousel-inner .carousel-item p {
+  .home-main-container .info-home-page-container .info-banda #slipknot-resumen-carousel .carousel-inner .carousel-item p {
     font-size: 19.5px;
     font-weight: lighter; } }
 
 @media only screen and (max-width: 375px) {
-  .home-main-container .info-banda #logo-slipknot-info {
+  .home-main-container .info-home-page-container .info-banda #logo-slipknot-info {
     margin-top: 90px;
     width: 250px; } }
 
@@ -1217,6 +1321,129 @@ body {
     justify-content: center; }
     .main-shows .show-container .show-options .option-show {
       margin: 10px 0; } }
+
+@media only screen and (max-width: 1599px) {
+  .main-shows .show-container .entradas-container .btn-comprar-entrada {
+    margin: 0; } }
+
+@media only screen and (max-width: 1330px) {
+  .main-shows .show-container {
+    flex-direction: column-reverse;
+    width: 90vw; }
+    .main-shows .show-container .show {
+      width: 100%; }
+      .main-shows .show-container .show .banner-evento {
+        margin-top: 30px;
+        width: 100%; }
+      .main-shows .show-container .show .evento-banner-descripcion {
+        width: 100%; }
+    .main-shows .show-container .entradas-container {
+      width: 100%;
+      margin: 0; }
+      .main-shows .show-container .entradas-container .min-precio .precio {
+        font-size: 40px; }
+      .main-shows .show-container .entradas-container .container-fechas .detalles-shows {
+        margin-left: 40px; }
+        .main-shows .show-container .entradas-container .container-fechas .detalles-shows .item-entrada:not(:first-child) {
+          margin-left: 30px; }
+        .main-shows .show-container .entradas-container .container-fechas .detalles-shows .btn-comprar-entrada {
+          margin-right: 40px; } }
+
+@media only screen and (max-width: 768px) {
+  .main-shows .show-container .show .evento-banner-descripcion h3 {
+    display: none; }
+  .main-shows .show-container .show .evento-banner-descripcion p {
+    display: none; } }
+
+@media only screen and (max-width: 681px) {
+  .main-shows .show-container .entradas-container .container-fechas {
+    justify-content: center; }
+    .main-shows .show-container .entradas-container .container-fechas .detalles-shows {
+      margin: 0; }
+      .main-shows .show-container .entradas-container .container-fechas .detalles-shows .item-entrada {
+        margin: 0; }
+      .main-shows .show-container .entradas-container .container-fechas .detalles-shows .btn-comprar-entrada {
+        margin: 0; } }
+
+@media only screen and (max-width: 624px) {
+  .main-shows .show-container .entradas-container .container-fechas .btn-comprar-entrada {
+    width: 60vw; } }
+
+@media only screen and (max-width: 624px) {
+  .main-shows .show-container .show .evento-banner-descripcion h2 {
+    font-weight: lighter;
+    letter-spacing: 0; }
+  .main-shows .show-container .show .evento-banner-descripcion h4 {
+    font-weight: lighter; }
+  .main-shows .show-container .entradas-container .min-precio .precio {
+    font-weight: lighter; }
+  .main-shows .show-container .entradas-container .container-fechas .btn-comprar-entrada {
+    width: 60vw; }
+  .main-shows .show-container .entradas-container .accordion .accordion-item h2 button {
+    font-size: 20px; } }
+
+@media only screen and (max-width: 480px) {
+  .main-shows {
+    width: 100vw; }
+    .main-shows .show-container .entradas-container .container-fechas .detalles-shows .fecha p {
+      width: 60px;
+      font-size: 17px; }
+      .main-shows .show-container .entradas-container .container-fechas .detalles-shows .fecha p .dia {
+        font-size: 28px; }
+    .main-shows .show-container .entradas-container .container-fechas .detalles-shows .horarios-1 p {
+      width: min-content;
+      font-size: 17px; }
+      .main-shows .show-container .entradas-container .container-fechas .detalles-shows .horarios-1 p .titulo {
+        font-size: 17px; }
+      .main-shows .show-container .entradas-container .container-fechas .detalles-shows .horarios-1 p .horario {
+        font-size: 25px; }
+      .main-shows .show-container .entradas-container .container-fechas .detalles-shows .horarios-1 p .subtitulo {
+        font-size: 17px; }
+    .main-shows .show-container .entradas-container .container-fechas .detalles-shows .horarios-2 p {
+      width: min-content;
+      font-size: 17px; }
+      .main-shows .show-container .entradas-container .container-fechas .detalles-shows .horarios-2 p .horario {
+        font-size: 25px; }
+      .main-shows .show-container .entradas-container .container-fechas .detalles-shows .horarios-2 p .subtitulo {
+        font-size: 17px; } }
+
+@media only screen and (max-width: 445px) {
+  .main-shows h1 {
+    font-size: 23px; }
+  .main-shows .show-container .show .evento-banner-descripcion h2 {
+    font-size: 21px; }
+  .main-shows .show-container .show .evento-banner-descripcion h4 {
+    font-size: 21px; }
+  .main-shows .show-container .entradas-container .min-precio h2 {
+    font-size: 25px; }
+  .main-shows .show-container .entradas-container .min-precio .precio {
+    font-size: 30px; }
+  .main-shows .show-container .entradas-container .container-fechas {
+    padding: 30px 0; }
+    .main-shows .show-container .entradas-container .container-fechas .detalles-shows {
+      width: 100%; }
+      .main-shows .show-container .entradas-container .container-fechas .detalles-shows .item-entrada {
+        margin: 0;
+        padding: 0; }
+      .main-shows .show-container .entradas-container .container-fechas .detalles-shows .item-entrada:not(:first-child) {
+        margin-left: 0; }
+    .main-shows .show-container .entradas-container .container-fechas .btn-comprar-entrada {
+      height: max-content;
+      width: 85%; }
+  .main-shows .show-container .entradas-container .accordion {
+    --bs-accordion-btn-padding-x: 0;
+    --bs-accordion-btn-padding-y: 0; }
+    .main-shows .show-container .entradas-container .accordion .accordion-item h2 button {
+      font-size: 15px; }
+      .main-shows .show-container .entradas-container .accordion .accordion-item h2 button img {
+        width: 22px;
+        margin: 5px; }
+    .main-shows .show-container .entradas-container .accordion .accordion-item .accordion-collapse .accordion-body {
+      font-weight: lighter;
+      font-size: 18px; }
+    .main-shows .show-container .entradas-container .accordion .accordion-item .accordion-collapse a {
+      font-weight: lighter;
+      font-size: 18px; } }
 
 @media only screen and (max-width: 425px) {
   .main-shows h1 {

@@ -1,7 +1,9 @@
 @media only screen and (max-width: 1440px) {
     .home-main-container {
-        .info-banda {
-            width: 85vw;
+        .info-home-page-container {
+            .info-banda {
+                width: 85vw;
+            }
         }
     }
 }
@@ -30,13 +32,15 @@
         .resumen-banda {
             display: none;
         }
-        .info-banda {
-            #slipknot-resumen-carousel {
-                display: flex;
-                .carousel-inner {
-                    .carousel-item {
-                        p {
-                            font-weight: lighter;
+        .info-home-page-container {
+            .info-banda {
+                #slipknot-resumen-carousel {
+                    display: flex;
+                    .carousel-inner {
+                        .carousel-item {
+                            p {
+                                font-weight: lighter;
+                            }
                         }
                     }
                 }
@@ -66,19 +70,19 @@
                 }
             }
         }
-        .info-banda {
-            #logo-slipknot-info {
-                margin-top: ($margen-top*3);
-                width: 300px;
-            }
-        }
-        .info-banda {
-            #slipknot-resumen-carousel {
-                .carousel-inner {
-                    .carousel-item {
-                        p {
-                            font-size: 19.5px;
-                            font-weight: lighter;
+        .info-home-page-container {
+            .info-banda {
+                #logo-slipknot-info {
+                    margin-top: ($margen-top*3);
+                    width: 300px;
+                }
+                #slipknot-resumen-carousel {
+                    .carousel-inner {
+                        .carousel-item {
+                            p {
+                                font-size: 19.5px;
+                                font-weight: lighter;
+                            }
                         }
                     }
                 }
@@ -89,10 +93,12 @@
 
 @media only screen and (max-width: 375px) {
     .home-main-container {
-        .info-banda {
-            #logo-slipknot-info {
-                margin-top: ($margen-top*3);
-                width: 250px;
+        .info-home-page-container {
+            .info-banda {
+                #logo-slipknot-info {
+                    margin-top: ($margen-top*3);
+                    width: 250px;
+                }
             }
         }
     }

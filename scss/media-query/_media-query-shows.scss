@@ -11,6 +11,272 @@
     }
 }
 
+@media only screen and (max-width: 1599px) {
+    .main-shows {
+        .show-container {
+            .entradas-container {
+                .btn-comprar-entrada {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1330px) {
+    .main-shows {
+        .show-container {
+            flex-direction: column-reverse;
+            width: 90vw;
+            .show {
+                width: 100%;
+                .banner-evento {
+                    margin-top: $margen-top;
+                    width: 100%;
+                }
+                .evento-banner-descripcion {
+                    width: 100%;
+                }
+            }
+            .entradas-container {
+                width: 100%;
+                margin: 0;
+                .min-precio {
+                    .precio {
+                        font-size: 40px;
+                    }
+                }
+                .container-fechas {
+                    .detalles-shows {
+                        margin-left: 40px;
+                        .item-entrada:not(:first-child) {
+                            margin-left: 30px;
+                        }
+                        .btn-comprar-entrada {
+                            margin-right: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-shows {
+        .show-container {
+            .show {
+                .evento-banner-descripcion {
+                    h3 {
+                        display: none;
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 681px) {
+    .main-shows {
+        .show-container {
+            .entradas-container {
+                .container-fechas {
+                    justify-content: center;
+                    .detalles-shows {
+                        margin: 0;
+                        .item-entrada {
+                            margin: 0;
+                        }
+                        .btn-comprar-entrada {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 624px) {
+    .main-shows {
+        .show-container {
+            .entradas-container {
+                .container-fechas {
+                    .btn-comprar-entrada {
+                        width: 60vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 624px) {
+    .main-shows {
+        .show-container {
+            .show {
+                .evento-banner-descripcion {
+                    h2 {
+                        font-weight: lighter;
+                        letter-spacing: 0;
+                    }
+                    h4 {
+                        font-weight: lighter;
+                        
+                    }
+                }
+            }
+            .entradas-container {
+                .min-precio {
+                    .precio {
+                        font-weight: lighter;
+                    }
+                }
+                .container-fechas {
+                    .btn-comprar-entrada {
+                        width: 60vw;
+                    }
+                }
+                .accordion {
+                    .accordion-item {
+                        h2 {
+                            button {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main-shows {
+        width: 100vw;
+        .show-container {
+            .entradas-container {
+                .container-fechas {
+                    .detalles-shows {
+                        .fecha {
+                            p {
+                                width: 60px;
+                                font-size: 17px;
+                                .dia {
+                                    font-size: 28px;
+                                }
+                            }
+                        }
+                        .horarios-1 {
+                            p {
+                                width: min-content;
+                                font-size: 17px;
+                                .titulo {
+                                    font-size: 17px;
+                                }
+                                .horario {
+                                    font-size: 25px;
+                                }
+                                .subtitulo {
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                        .horarios-2 {
+                            p {
+                                width: min-content;
+                                font-size: 17px;
+                                .horario {
+                                    font-size: 25px;
+                                }
+                                .subtitulo {
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .main-shows {
+        h1 {
+            font-size: $h1-font-size-425px;
+        }
+        .show-container {
+            .show {
+                .evento-banner-descripcion {
+                    h2 {
+                        font-size: 21px;
+                    }
+                    h4 {
+                        font-size: 21px;
+                    }
+                }
+            }
+            .entradas-container {
+                .min-precio {
+                    h2 {
+                        font-size: 25px;
+                    }
+                    .precio {
+                        font-size: 30px;
+                    }
+                }
+                .container-fechas {
+                    padding: 30px 0;
+                    .detalles-shows {
+                        width: 100%;
+                        .item-entrada {
+                            margin: 0;
+                            padding: 0;
+                        }
+                        .item-entrada:not(:first-child) {
+                            margin-left: 0;
+                        }
+                    }
+                    .btn-comprar-entrada {
+                        height: max-content;
+                        width: 85%;
+                    }
+                }
+                .accordion {
+                    --bs-accordion-btn-padding-x: 0;
+                    --bs-accordion-btn-padding-y: 0;
+                    .accordion-item {
+                        h2 {
+                            button {
+                                font-size: 15px;
+                                img {
+                                    width: 22px;
+                                    margin: 5px;
+                                }
+                            }
+                        }
+                        .accordion-collapse {
+                            .accordion-body {
+                                font-weight: lighter;
+                                font-size: 18px;
+                            }
+                            a {
+                                font-weight: lighter;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 425px) {
     .main-shows {
         h1 {

@@ -50,6 +50,7 @@
     }
     p {
         text-transform: uppercase;
+        font-weight: lighter;
         display: block;
         letter-spacing: 2px;
         font-size: 25px;
@@ -82,6 +83,7 @@
     background-size: cover;
     flex-direction: column;
     justify-content: center;
+    font-weight: lighter;
     background-position: center;
     h3 {
         display: block;
@@ -125,10 +127,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 1.5vh;
-    background: url(../assets/img/album-cover/fila-3-columna-1.jpg);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
 } 
 
 @mixin album-details-gral {

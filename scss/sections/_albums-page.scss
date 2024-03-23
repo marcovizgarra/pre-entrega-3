@@ -7,6 +7,33 @@
         margin-top: $margen-top;
         letter-spacing: $h1-letter-spacing;
     }
+    .background-fila-1 {
+        background: linear-gradient(to right,
+            #0000004b,
+            #000000bb),
+            url(/assets/img/album-cover/fila-1-columna-1.jpg);
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    .background-fila-2 {
+        background: linear-gradient(to right,
+            #0000004b,
+            #000000bb),
+            url(/assets/img/album-cover/fila-2-columna-1.jpg);
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    .background-fila-3 {
+        background: linear-gradient(to right,
+            #0000004b,
+            #000000bb),
+            url(/assets/img/album-cover/fila-3-columna-1.jpg);
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
     .album-container {
         .cover-album {
             width: 390px;
@@ -61,7 +88,7 @@
         }
         .album-details-1 {
             background: radial-gradient(
-                #88000088,
+                #36000088,
                 #000000d0),
                 url(../assets/img/album-cover/album-details-background/slipknot-firs-album-details.jpg);
             @include album-details-gral;
@@ -75,15 +102,15 @@
         } 
         .album-details-3 {
             background: radial-gradient(
-                #9900006c,
-                #250000),
+                #36000088,
+                #000000d0),
                 url(../assets/img/album-cover/album-details-background/subliminal-verses-details.jpg);
             @include album-details-gral;
         } 
         .album-details-4 {
             background: radial-gradient(
-                #363300bb,
-                #250000),
+                #36000088,
+                #000000d0),
                 url(../assets/img/album-cover/album-details-background/slipknot-all-hope-details.jpg);
             @include album-details-gral;
         }
@@ -96,14 +123,14 @@
         } 
         .album-details-6 {
             background: radial-gradient(
-                #4c0063b9,
+                #390449b9,
                 #000000),
                 url(../assets/img/album-cover/album-details-background/we-are-not-yor-kind-details.jpg);
             @include album-details-gral;
         }
         .album-details-7 {
             background: radial-gradient(
-                #580000bd,
+                #421212d0,
                 #000000),
                 url(../assets/img/album-cover/album-details-background/the-end-so-far-details.jpg);
             @include album-details-gral;

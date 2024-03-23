@@ -1,6 +1,6 @@
 .main-shows {
+    width: 99vw;
     margin-top: 40px;
-    width: 100vw;
     @include flex-column-center;
     h1 {
         color: white;
@@ -26,12 +26,12 @@
                 margin-top: $margen-top;
                 h2 {
                     text-transform: uppercase;
-                    background-color: black;
+                    background-color: $rojo-slipknot;
                     border: 1px solid white;
-                    font-weight: lighter;
-                    border-radius: 10px;
-                    font-size: 22px;
+                    
+                    font-size: 24px;
                     padding: 5px;
+                    letter-spacing: 10px;
                 }
                 h3 {
                     margin-top: $margen-top;
@@ -54,95 +54,181 @@
         .entradas-container {
             width: 35vw;
             margin-left: 2.5vw;
-            .item-entrada {
-                margin-left: 20px;
-            }
             .min-precio {
+                height: max-content;
+                display: flex;
                 text-align: center;
-                height: 5.5vw;
+                align-items: center;
+                justify-content: space-around;
                 background-color: $rojo-slipknot;
                 h2 {
+                    margin: 0;
                     text-transform: uppercase;
                     font-weight: lighter;
-                    .precio {
-                        font-weight: bold;
-                        font-size: 40px
-                    }
                 }
-                @include flex-row-center;
+                .precio {
+                    font-weight: bold;
+                    font-size: 50px
+                }
+
             }
-            .detalles-shows {
+            .container-fechas {
                 background-color: #3f3f3f;
                 padding: 15px;
-                .fecha {
-                    p {
-                        width: 100px;
-                        height: 100px;
-                        border: 2px solid white;
-                        text-transform: uppercase;
-                        font-weight: lighter;
-                        border-radius: 4px;
-                        padding: 10px;
-                        font-size: 20px;
-                        .dia {
-                            font-size: 37px;
-                            font-weight: bold;
-                        }
-                    }
-                }
-                .horarios-1 {
-                    p {
-                        line-height: 1.1;
-                        width: 100px;
-                        height: 100px;
-                        border-radius: 4px;
-                        padding: 10px;
-                        .titulo {
-                            letter-spacing: 2px;
+                .detalles-shows {
+                    .fecha {
+                        p {
+                            width: 100px;
+                            height: 100px;
+                            border: 2px solid white;
                             text-transform: uppercase;
-                            color: orange;
-                            font-size: 15px;
-                        }
-                        .horario {
-                            font-size: 32px;
-                        }
-                        .subtitulo {
                             font-weight: lighter;
-                            font-size: 18px;
+                            border-radius: 4px;
+                            padding: 10px;
+                            font-size: 20px;
+                            .dia {
+                                font-size: 37px;
+                                font-weight: bold;
+                            }
                         }
+                    }
+                    .horarios-1 {
+                        p {
+                            line-height: 1.1;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 4px;
+                            padding: 10px;
+                            .titulo {
+                                letter-spacing: 2px;
+                                text-transform: uppercase;
+                                color: orange;
+                                font-size: 15px;
+                            }
+                            .horario {
+                                font-size: 32px;
+                            }
+                            .subtitulo {
+                                font-weight: lighter;
+                                font-size: 18px;
+                            }
+                        }
+                        @include flex-row-center;
+                    }
+                    .horarios-2 {
+                        p {
+                            line-height: 1.1;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 4px;
+                            padding: 10px;
+                            .horario {
+                                font-size: 32px;
+                            }
+                            .subtitulo {
+                                font-weight: lighter;
+                                font-size: 18px;
+                            }
+                        }
+                        @include flex-row-center;
                     }
                     @include flex-row-center;
                 }
-                .horarios-2 {
-                    p {
-                        line-height: 1.1;
-                        width: 100px;
-                        height: 100px;
-                        border-radius: 4px;
-                        padding: 10px;
-                        .horario {
-                            font-size: 32px;
-                        }
-                        .subtitulo {
-                            font-weight: lighter;
-                            font-size: 18px;
-                        }
+                .btn-comprar-entrada {
+                    color: white;
+                    width: 130px;
+                    height: 60px;
+                    border-radius: 60px;
+                    border: 2px solid white;
+                    text-transform: uppercase;
+                    background-color: rgb(128, 128, 128);
+                    &:hover {
+                        background-color: black;
+                        border: 2px solid red;
                     }
-                    @include flex-row-center;
                 }
                 @include flex-row-center;
+                justify-content: space-between;
             }
-            .btn-comprar-entrada {
-                color: white;
-                width: 130px;
-                height: 60px;
-                margin-left: 100px;
-                border-radius: 60px;
-                border: 2px solid white;
+            
+            .accordion {
+                width: 100%;
                 text-transform: uppercase;
-                background-color: rgb(128, 128, 128);
+                --bs-accordion-bg:  #3f3f3f;
+                --bs-accordion-color: white;
+                --bs-accordion-btn-color: white;
+                --bs-accordion-border-radius: 0px;
+                --bs-accordion-active-bg: #d22329;
+                --bs-accordion-active-color: white;
+                --bs-accordion-inner-border-radius: 0px;
+                --bs-accordion-border-color: #d2232900;
+                --bs-accordion-btn-focus-box-shadow: none;
+                .accordion-button.collapsed::after {
+                    background: url("../assets/img/show-icons/square-caret-down-solid.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                  }
+                  .accordion-button:not(.collapsed)::after {
+                    background: url("../assets/img/show-icons/square-caret-down-solid.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;  
+                }
+                .accordion-item {
+                    border-top: 1px solid red;
+                }
+                .accordion-header {
+                    button{
+                        text-transform: uppercase;
+                        font-weight: 1vw;
+                        letter-spacing: 5px;
+                        img {
+                            width: 30px;
+                            margin-right: 30px;
+                        }
+                    }
+                }
+                #flush-collapseOne {
+                    .accordion-body {
+                        img {
+                            width: 100%;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+                #flush-collapseThree {
+                    .accordion-body {
+                        img {
+                            width: 100%;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            &:hover {
+                                color: yellow;
+                            }
+                        }
+                        .map-google {
+                            overflow:hidden;
+                            padding-bottom:56.25%;
+                            position:relative;
+                            height:0;
+                        }
+                        
+                        .map-google iframe{
+                            left:0;
+                            top:0;
+                            height:100%;
+                            width:100%;
+                            position:absolute;
+                        }
+                    }
+                }
             }
         }
         @include flex-row-center;
+        align-items: flex-start;
     }
 }

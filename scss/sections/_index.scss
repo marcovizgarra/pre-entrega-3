@@ -55,110 +55,124 @@
         }
     }
 
-    .info-banda {
-        width: 65vw;
+    .info-home-page-container {
         #logo-slipknot-info {
             margin-top: ($margen-top*2);
-            width: 20vw;
+            width: 99vw;
+            height: 60vh;
+            background: radial-gradient(circle at 0% 50%,
+                #58008b5d,
+                #00000042,
+                #00000093),
+                url(/assets/img/band-members-section/posible-1.jpg);
+            background-size: cover;
+            background-position: center;
+            h1 {
+                margin-top: ($margen-top*3);
+                font-size: 55px;
+                letter-spacing: $h1-letter-spacing;
+                text-transform: uppercase;
+                font-weight: lighter;
+            }
         }
-        h1 {
+        .info-banda {
             margin-top: ($margen-top*3);
-            font-size: 35px;
-            text-transform: uppercase;
-        }
-        .resumen-banda {
-            text-align: justify;
-            font-size: 25px;
-            font-weight: lighter;
-            background-image: linear-gradient( 
-                to left, 
-                rgba(0, 0, 0, 0.849),
-                rgba(0, 0, 0, 0.712)),
-                url(../assets/img/9-point-star-half.png);
-            background-position: right;
-            background-size: 20vw;
-            background-repeat: no-repeat;
-        }
-        #slipknot-resumen-carousel {
-            width: 100%;
-            height: 100%;
-            border: 1px solid white;
-            .carousel-inner {
-                .carousel-item {
-                    height: 85vh;
-                    padding: 0 10vw;
-                    text-align: justify !important;
-                    @include flex-column-center;
-                    p {
-                        font-size: 25px;
-                        font-weight: lighter;
+            width: 65vw;
+            .resumen-banda {
+                text-align: justify;
+                font-size: 25px;
+                font-weight: lighter;
+                background-image: linear-gradient( 
+                    to left, 
+                    rgba(0, 0, 0, 0.849),
+                    rgba(0, 0, 0, 0.712)),
+                    url(../assets/img/9-point-star-half.png);
+                background-position: right;
+                background-size: 20vw;
+                background-repeat: no-repeat;
+            }
+            #slipknot-resumen-carousel {
+                width: 100%;
+                height: 100%;
+                border: 1px solid white;
+                .carousel-inner {
+                    .carousel-item {
+                        height: 85vh;
+                        padding: 0 10vw;
+                        text-align: justify !important;
+                        @include flex-column-center;
+                        p {
+                            font-size: 25px;
+                            font-weight: lighter;
+                        }
                     }
-                }
-                .slide-1 {
-                    background: radial-gradient(circle at 0% 50%,
-                        #4a005ccb,
-                        #000000cb,
-                        #7903038e),
-                        url(../assets/img/band-members-section/carousel-slide/band-slide.jpeg);
-                    background-size: cover;
-                    background-position: center;    
-                }
-                .slide-2 {
-                    background: radial-gradient(circle at 0% 50%,
-                        #4a005ccb,
-                        #000000cb,
-                        #7903038e),
-                        url(../assets/img/band-members-section/carousel-slide/carig-jones-slide.jpeg);
-                    background-size: cover;   
-                    background-position: center; 
-                }
-                .slide-3 {
-                    background: radial-gradient(circle at 0% 50%,
-                        #4a005ce0,
-                        #000000cb,
-                        #7903038e),
-                        url(../assets/img/band-members-section/carousel-slide/jay-weinberg-slide.jpeg);
-                    background-size: cover;
-                    background-position: center;    
-                }
-                .slide-4 {
-                    background: radial-gradient(circle at 0% 50%,
-                        #4a005ce0,
-                        #000000cb,
-                        #3e3f008e),
-                        url(../assets/img/band-members-section/carousel-slide/corey-taylor-slide.jpeg);
-                    background-size: cover;
-                    background-position: center;    
-                }
-                .slide-5 {
-                    background: radial-gradient(circle at 0% 50%,
-                        #4a005ce0,
-                        #000000cb,
-                        #7903038e),
-                        url(../assets/img/band-members-section/carousel-slide/mick-thomson-slide.jpeg);
-                    background-size: cover;
-                    background-position: center;    
-                }
-                .slide-6 {
-                    background: radial-gradient(circle at 0% 50%,
-                        #4a005ce0,
-                        #000000cb,
-                        #7903038e),
-                        url(../assets/img/band-members-section/carousel-slide/jim-root-slide.jpeg);
-                    background-size: cover;
-                    background-position: center;    
-                }
-                .slide-7 {
-                    background: radial-gradient(circle at 0% 50%,
-                        #2d0038e0,
-                        #000000cb,
-                        #5700008e),
-                        url(../assets/img/band-members-section/carousel-slide/sid-wilson-slide.jpeg);
-                    background-size: cover;
-                    background-position: center;    
+                    .slide-1 {
+                        background: radial-gradient(circle at 0% 50%,
+                            #4a005ccb,
+                            #000000cb,
+                            #7903038e),
+                            url(../assets/img/band-members-section/carousel-slide/band-slide.jpeg);
+                        background-size: cover;
+                        background-position: center;    
+                    }
+                    .slide-2 {
+                        background: radial-gradient(circle at 0% 50%,
+                            #4a005ccb,
+                            #000000cb,
+                            #7903038e),
+                            url(../assets/img/band-members-section/carousel-slide/carig-jones-slide.jpeg);
+                        background-size: cover;   
+                        background-position: center; 
+                    }
+                    .slide-3 {
+                        background: radial-gradient(circle at 0% 50%,
+                            #4a005ce0,
+                            #000000cb,
+                            #7903038e),
+                            url(../assets/img/band-members-section/carousel-slide/jay-weinberg-slide.jpeg);
+                        background-size: cover;
+                        background-position: center;    
+                    }
+                    .slide-4 {
+                        background: radial-gradient(circle at 0% 50%,
+                            #4a005ce0,
+                            #000000cb,
+                            #3e3f008e),
+                            url(../assets/img/band-members-section/carousel-slide/corey-taylor-slide.jpeg);
+                        background-size: cover;
+                        background-position: center;    
+                    }
+                    .slide-5 {
+                        background: radial-gradient(circle at 0% 50%,
+                            #4a005ce0,
+                            #000000cb,
+                            #7903038e),
+                            url(../assets/img/band-members-section/carousel-slide/mick-thomson-slide.jpeg);
+                        background-size: cover;
+                        background-position: center;    
+                    }
+                    .slide-6 {
+                        background: radial-gradient(circle at 0% 50%,
+                            #4a005ce0,
+                            #000000cb,
+                            #7903038e),
+                            url(../assets/img/band-members-section/carousel-slide/jim-root-slide.jpeg);
+                        background-size: cover;
+                        background-position: center;    
+                    }
+                    .slide-7 {
+                        background: radial-gradient(circle at 0% 50%,
+                            #2d0038e0,
+                            #000000cb,
+                            #5700008e),
+                            url(../assets/img/band-members-section/carousel-slide/sid-wilson-slide.jpeg);
+                        background-size: cover;
+                        background-position: center;    
+                    }
                 }
             }
         }
+        @include flex-column-center;
     }
 
     .info-integrantes {

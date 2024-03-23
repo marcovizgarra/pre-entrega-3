@@ -18,6 +18,16 @@
         --bs-accordion-btn-focus-box-shadow: none;
         --bs-accordion-active-bg: #d22329;
         --bs-accordion-active-color: white;
+        .accordion-button.collapsed::after {
+            background: url("../assets/img/show-icons/square-caret-down-solid.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+          .accordion-button:not(.collapsed)::after {
+            background: url("../assets/img/show-icons/square-caret-down-solid.svg");
+            background-size: contain;
+            background-repeat: no-repeat;  
+        }
         button{
             text-transform: uppercase;
             font-weight: 1vw;
