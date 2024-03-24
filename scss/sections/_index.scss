@@ -13,6 +13,7 @@
         left: 0;
         z-index: -1;
     }
+
     .estrella-nueve-puntas {
         animation: rotacionInfinita 25s linear infinite;
         width: 36.45vw;
@@ -28,6 +29,28 @@
         }
     }
     @include flex-column-center;
+}
+
+.video-box-responsive {
+    display: none;
+    width: 100%;
+    height: 78vh;
+
+    video {
+        background: linear-gradient(to top,
+        #000000af,
+        #000000af);
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
 }
 
 .home-main-container {
