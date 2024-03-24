@@ -71,8 +71,10 @@
     margin-bottom: 10px; }
   .footer-container h2 {
     font-size: large;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: lighter; }
   .footer-container .redes-sociales-footer ul {
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -83,7 +85,7 @@
     .footer-container .redes-sociales-footer ul li {
       list-style-type: none; }
       .footer-container .redes-sociales-footer ul li a {
-        margin: 10px; }
+        margin: 8px; }
         .footer-container .redes-sociales-footer ul li a img {
           width: 20px; }
   .footer-container .volver-inicio {
@@ -1095,7 +1097,7 @@ body {
     margin-bottom: 60px;
     width: 99vw;
     height: 60vh;
-    background: radial-gradient(circle at 0% 50%, #898b0018, #00000042, #00000052), url(/assets/img/shows-img/banner-shows-pasados.jpg);
+    background: radial-gradient(circle at 0% 50%, #898b0018, #00000042, #00000052), url(../assets/img/shows-img/banner-shows-pasados.jpg);
     background-size: cover;
     background-position: center; }
     .main-shows .shows-anteriores-banner h2 {

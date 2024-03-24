@@ -18,14 +18,15 @@
     h2 {
         font-size: large;
         text-transform: uppercase;
+        font-weight: lighter;
     }
     .redes-sociales-footer {
         ul {
-
+            padding: 0;
             li {
                 list-style-type: none;
                 a{ 
-                    margin: 10px;
+                    margin: 8px;
                     img {
                         width: 20px;
                     }
